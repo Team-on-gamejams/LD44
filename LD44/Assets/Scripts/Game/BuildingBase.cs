@@ -2,16 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BuildingBase : BloodChanger {
-	public float health;
+public class BuildingBase : MonoBehaviour {
+	public BloodConsumper bloodConsumper;
+	public Health health;
+	public Price price;
+	public Production production;
+	public Capacity capacity;
 
-	public float bloodProduce;
-	public float meatProduce;
-
-	public float bloodPrice;
-	public float meatPrice;
-
-	public float bloodCapacity;
-	public float meatCapacity;
+	void Update() {
+		
+	}
 }
 

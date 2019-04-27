@@ -6,6 +6,9 @@ using System.Linq;
 public class PlayerController : MonoBehaviour {
 	List<BuildingBase> buildings;
 
+	GameRes currRes;
+	GameRes maxRes;
+
 	const float gameTickTime = 1.0f;
 	float currTickTime = 0f;
 
@@ -15,14 +18,19 @@ public class PlayerController : MonoBehaviour {
 		GameManager.Instance.Player = this;
 	}
 
-	void Update() {
-		currTickTime += Time.deltaTime;
+	public void AddResource(GameRes res) {
+		currRes += res;
+		if (currRes.blood > maxRes.blood)
+			currRes.blood = maxRes.blood;
+		if (currRes.meat > maxRes.meat)
+			currRes.meat = maxRes.meat;
+	}
 
-		while(currTickTime >= gameTickTime){
-			currTickTime -= gameTickTime;
+	public bool CanTakeResource(GameRes res) {
+		return res <= currRes;
+	}
 
-			foreach (var building in buildings)
-				building.GameTick();
-		}
+	public void TakeResource(GameRes res){
+		currRes -= res;
 	}
 }

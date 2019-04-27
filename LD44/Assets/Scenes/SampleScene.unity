@@ -204,14 +204,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e095bfa4056834b498cb44a39126d485, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bloodChange: 0
-  health: 0
-  bloodProduce: 0
-  meatProduce: 0
-  bloodPrice: 0
-  meatPrice: 0
-  bloodCapacity: 0
-  meatCapacity: 0
+  bloodConsumper:
+    bloodConsumpertion: 0
+  health:
+    points: 100
+  price:
+    blood: 0
+    meat: 0
+  production:
+    blood: 100
+    meat: 50
+    TimeForProd: 1
+  capacity:
+    blood: 1000
+    meat: 1000
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
