@@ -10152,6 +10152,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MainHearth (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4252029191415611879, guid: 894aac68dc986fa46826df19522ffe12,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4252029191415611873, guid: 894aac68dc986fa46826df19522ffe12,
         type: 3}
       propertyPath: m_LocalPosition.x
