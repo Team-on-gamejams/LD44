@@ -23,6 +23,6 @@ public class GameManager : Singleton<GameManager> {
 		Input.multiTouchEnabled = false;
 		LeanTween.init(800);
 
-		IsTimeStop = true;
+		IsTimeStop = false;
 	}
 }

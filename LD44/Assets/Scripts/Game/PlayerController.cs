@@ -4,9 +4,12 @@ using UnityEngine;
 using System.Linq;
 
 public class PlayerController : MonoBehaviour {
+	[SerializeField]
 	List<BuildingBase> buildings;
 
+	[SerializeField]
 	GameRes currRes;
+	[SerializeField]
 	GameRes maxRes;
 
 	const float gameTickTime = 1.0f;
@@ -16,6 +19,11 @@ public class PlayerController : MonoBehaviour {
 		buildings = new List<BuildingBase>();
 
 		GameManager.Instance.Player = this;
+	}
+
+	public void AddBuilding(BuildingBase building){
+		buildings.Add(building);
+		maxRes += building.capacity;
 	}
 
 	public void AddResource(GameRes res) {
@@ -32,5 +40,9 @@ public class PlayerController : MonoBehaviour {
 
 	public void TakeResource(GameRes res){
 		currRes -= res;
+		if (currRes.blood < 0)
+			currRes.blood = 0;
+		if (currRes.meat < 0)
+			currRes.meat = 0;
 	}
 }
