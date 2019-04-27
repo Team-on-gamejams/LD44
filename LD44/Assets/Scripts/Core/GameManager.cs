@@ -16,6 +16,7 @@ public class GameManager : Singleton<GameManager> {
 	private bool isTimeStop;
 
 	public EventManager EventManager;
+	public PlayerController Player;
 
 	public void Start() {
 		EventManager = new EventManager();
