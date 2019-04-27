@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
@@ -28,5 +29,19 @@ public class HelperFunctions : MonoBehaviour {
 			list[k] = list[n];
 			list[n] = value;
 		}
+	}
+
+	public void ChangeAlpha(MaskableGraphic img, float startAlpha, float endAlpha, float time) {
+		LeanTween.value(img.gameObject, img.color.a, endAlpha, time)
+		  .setOnStart(() => {
+			  Color color = img.color;
+			  color.a = startAlpha;
+			  img.color = color;
+		  })
+		  .setOnUpdate((float alpha) => {
+			  Color color = img.color;
+			  color.a = alpha;
+			  img.color = color;
+		  });
 	}
 }

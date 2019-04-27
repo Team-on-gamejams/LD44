@@ -9,8 +9,10 @@ public class PlayerController : MonoBehaviour {
 
 	[SerializeField]
 	GameRes currRes;
+	public GameRes CurrRes => currRes;
 	[SerializeField]
 	GameRes maxRes;
+	public GameRes MaxRes => maxRes;
 
 	const float gameTickTime = 1.0f;
 	float currTickTime = 0f;
