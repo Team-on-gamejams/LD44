@@ -81,4 +81,10 @@ public class PlayerController : MonoBehaviour {
 		if (currRes.meat < 0)
 			currRes.meat = 0;
 	}
+
+	public void TakeBlood(float res) {
+		currRes.blood -= res;
+		if (currRes.blood < 0)
+			currRes.blood = 0;
+	}
 }
