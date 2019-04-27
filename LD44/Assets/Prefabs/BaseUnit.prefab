@@ -24,13 +24,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1224078448319164010}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.123, y: 1.123, z: 1.123}
+  m_LocalRotation: {x: 0, y: 0, z: -1, w: 0}
+  m_LocalPosition: {x: -0.006, y: 0, z: 0}
+  m_LocalScale: {x: 2.1772723, y: 2.1772723, z: 2.1772723}
   m_Children: []
   m_Father: {fileID: 1224078448456859098}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180}
 --- !u!212 &1224078448319164008
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -68,8 +68,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: fa7fb988c0ba3c0409074d6f15700f99, type: 3}
-  m_Color: {r: 0.9236182, g: 0.9716981, b: 0.05958529, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 3615c8ae4fc900747b1bf43468797390, type: 3}
+  m_Color: {r: 0.9622642, g: 0.92436236, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -88,9 +88,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1224078448456859098}
+  - component: {fileID: 1224078448456859099}
   - component: {fileID: 1224078448456859092}
   - component: {fileID: 1799601910757823661}
-  - component: {fileID: 1224078448456859099}
   m_Layer: 0
   m_Name: BaseUnit
   m_TagString: Unit
@@ -114,6 +114,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1224078448456859099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1224078448456859095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cff9ed203c04a145b8bca2d8e231bc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodConsumper:
+    bloodConsumpertion: 3
+    TimeForConsumpertion: 1
+  health:
+    maxHealth: 0
+  price:
+    blood: 0
+    meat: 0
+  speed: 5
+  isMoving: 0
+  isReachDestination: 0
 --- !u!61 &1224078448456859092
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -127,7 +150,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.00687629, y: -0.010001928}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -138,7 +161,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.32, y: 0.32}
+  m_Size: {x: 0.6463126, y: 0.41454926}
   m_EdgeRadius: 0
 --- !u!50 &1799601910757823661
 Rigidbody2D:
@@ -161,29 +184,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1224078448456859099
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1224078448456859095}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2cff9ed203c04a145b8bca2d8e231bc4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bloodConsumper:
-    bloodConsumpertion: 0
-    TimeForConsumpertion: 1
-  health:
-    maxHealth: 0
-  price:
-    blood: 0
-    meat: 0
-  speed: 5
-  isMoving: 0
-  isReachDestination: 0
 --- !u!1 &1224078449306878293
 GameObject:
   m_ObjectHideFlags: 0
@@ -208,13 +208,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1224078449306878293}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: -1, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1224078448456859098}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180}
 --- !u!212 &1224078449306878297
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -252,8 +252,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: fa7fb988c0ba3c0409074d6f15700f99, type: 3}
-  m_Color: {r: 0.098409176, g: 0.3301887, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: eda40514e8619f64bb230ae02e62e953, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
