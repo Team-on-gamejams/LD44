@@ -4,23 +4,57 @@ using UnityEngine;
 using System.Linq;
 
 public class PlayerController : MonoBehaviour {
-	[SerializeField]
-	List<BuildingBase> buildings;
 
-	[SerializeField]
-	GameRes currRes;
+	[SerializeField] List<BuildingBase> buildings;
+
+	[SerializeField] List<UnitBase> units;
+	public List<UnitBase> Units => units;
+	[SerializeField] List<UnitBase> selectedUnits;
+
+	[SerializeField] GameRes currRes;
 	public GameRes CurrRes => currRes;
-	[SerializeField]
-	GameRes maxRes;
+	[SerializeField] GameRes maxRes;
 	public GameRes MaxRes => maxRes;
+
+	public UnitSelectionComponent unitSelection;
+	public AINavMeshGenerator aINavMeshGenerator;
 
 	const float gameTickTime = 1.0f;
 	float currTickTime = 0f;
 
 	void Start() {
 		buildings = new List<BuildingBase>();
+		units = new List<UnitBase>();
+		selectedUnits = new List<UnitBase>();
+		aINavMeshGenerator = GetComponent<AINavMeshGenerator>();
+		unitSelection = GetComponent<UnitSelectionComponent>();
 
 		GameManager.Instance.Player = this;
+	}
+
+	void Update() {
+		if (Input.GetMouseButtonDown(1)) {
+			var clickPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+			foreach (var unit in units)
+				unit.RecalcMoveIfStop();
+			foreach (var unit in selectedUnits)
+				unit.MoveTo(clickPos);
+		}
+	}
+
+	public void AddUnit(UnitBase unit){
+		units.Add(unit);
+	}
+
+	public void AddSelectedUnit(UnitBase unit) {
+		unit.Select();
+		selectedUnits.Add(unit);
+	}
+
+	public void CleatSelectedUnits(){
+		foreach (var unit in selectedUnits) 
+			unit.UnSelect();
+		selectedUnits.Clear();
 	}
 
 	public void AddBuilding(BuildingBase building){

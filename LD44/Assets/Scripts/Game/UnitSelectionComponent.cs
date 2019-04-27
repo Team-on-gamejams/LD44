@@ -11,8 +11,14 @@ public class UnitSelectionComponent : MonoBehaviour {
 			isSelecting = true;
 			mousePosition1 = Input.mousePosition;
 		}
-		if (Input.GetMouseButtonUp(0))
+		if (Input.GetMouseButtonUp(0)) {
+			var player = GameManager.Instance.Player;
+			player.CleatSelectedUnits();
+			foreach (var unit in player.Units) 
+				if(IsWithinSelectionBounds(unit.gameObject))
+					player.AddSelectedUnit(unit);
 			isSelecting = false;
+		}
 	}
 
 	void OnGUI() {
