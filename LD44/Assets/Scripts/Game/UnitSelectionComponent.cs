@@ -22,7 +22,7 @@ public class UnitSelectionComponent : MonoBehaviour {
 	}
 
 	void OnGUI() {
-		if (isSelecting) {
+		if (isSelecting && GameManager.Instance.Player.cursorMode == CursorMode.Normal && !GameManager.Instance.IsTimeStop) {
 			var rect = GetScreenRect(mousePosition1, Input.mousePosition);
 			DrawScreenRect(rect, new Color(0.8f, 0.8f, 0.95f, 0.25f));
 			DrawScreenRectBorder(rect, 2, new Color(0.8f, 0.8f, 0.95f));

@@ -3,6 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 
+public enum CursorMode {
+	Normal,
+	Build,
+}
+
 public class PlayerController : MonoBehaviour {
 
 	[SerializeField] List<BuildingBase> buildings;
@@ -16,6 +21,9 @@ public class PlayerController : MonoBehaviour {
 	[SerializeField] GameRes maxRes;
 	public GameRes MaxRes => maxRes;
 
+	public CursorMode cursorMode;
+	public ShopBuild currentBuildPref;
+
 	public UnitSelectionComponent unitSelection;
 	public AINavMeshGenerator aINavMeshGenerator;
 
@@ -28,17 +36,38 @@ public class PlayerController : MonoBehaviour {
 		selectedUnits = new List<UnitBase>();
 		aINavMeshGenerator = GetComponent<AINavMeshGenerator>();
 		unitSelection = GetComponent<UnitSelectionComponent>();
+		currentBuildPref = null;
+		cursorMode = CursorMode.Normal;
 
 		GameManager.Instance.Player = this;
 	}
 
 	void Update() {
-		if (Input.GetMouseButtonDown(1)) {
-			var clickPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-			foreach (var unit in units)
-				unit.RecalcMoveIfStop();
-			foreach (var unit in selectedUnits)
-				unit.MoveTo(clickPos);
+		if(cursorMode == CursorMode.Normal){
+			if (Input.GetMouseButtonDown(1)) {
+				var clickPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+				foreach (var unit in units)
+					unit.RecalcMoveIfStop();
+				foreach (var unit in selectedUnits)
+					unit.MoveTo(clickPos);
+			}
+		}
+		else if (cursorMode == CursorMode.Build) {
+			if (Input.GetMouseButtonDown(0)) {
+				AddBuilding(currentBuildPref.spawnedGameObject.GetComponent<BuildingBase>());
+				Destroy(currentBuildPref.spawnedGameObject.GetComponent<StayOnCursorPos>());
+				DisableBuildingMode();
+			}
+			else if (Input.GetMouseButtonDown(1)) {
+				Destroy(currentBuildPref.spawnedGameObject);
+				DisableBuildingMode();
+			}
+		}
+	}
+
+	public void DisableBuildingMode(){
+		if(currentBuildPref != null){
+			currentBuildPref.DisableBuildMode();
 		}
 	}
 

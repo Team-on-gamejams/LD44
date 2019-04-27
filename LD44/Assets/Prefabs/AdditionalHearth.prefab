@@ -88,7 +88,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4252029191415611873}
-  - component: {fileID: 4252029191415611875}
+  - component: {fileID: 7602634439991168412}
   - component: {fileID: 4252029191415611874}
   m_Layer: 0
   m_Name: AdditionalHearth
@@ -114,7 +114,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4252029191415611875
+--- !u!114 &7602634439991168412
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -123,7 +123,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4252029191415611879}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee263885d1888564caa7266882cd1742, type: 3}
+  m_Script: {fileID: 11500000, guid: e095bfa4056834b498cb44a39126d485, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   bloodConsumper:
@@ -133,7 +133,7 @@ MonoBehaviour:
     maxHealth: 100
   price:
     blood: 0
-    meat: 0
+    meat: 100
   production:
     blood: 100
     meat: 0
