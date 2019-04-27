@@ -127,7 +127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bloodConsumper:
-    bloodConsumpertion: 0
+    bloodConsumpertion: 3
     TimeForConsumpertion: 1
   health:
     maxHealth: 0

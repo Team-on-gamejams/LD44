@@ -12,6 +12,7 @@ public class BloodConsumper {
 
 	public BloodConsumper() {
 		res = new GameRes();
+		res.blood = bloodConsumpertion;
 	}
 
 	public void Tick(float deltaTime) {
