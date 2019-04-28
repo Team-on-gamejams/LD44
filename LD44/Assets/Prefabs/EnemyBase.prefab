@@ -54,8 +54,7 @@ MonoBehaviour:
     blood: 0
     meat: 0
   speed: 5
-  isMoving: 0
-  isReachDestination: 0
+  awaliableAfter: 0
 --- !u!70 &58628753611483992
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -69,9 +68,9 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.4826511, y: 0.26831302}
-  m_Direction: 1
+  m_Offset: {x: 0.031604856, y: -0.024066806}
+  m_Size: {x: 0.7209347, y: 0.78884244}
+  m_Direction: 0
 --- !u!50 &1799601910757823661
 Rigidbody2D:
   serializedVersion: 4
@@ -183,7 +182,7 @@ Animator:
   m_GameObject: {fileID: 1224078449306878293}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e57e3c17f05c76f49a650af4f7a63e5c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
