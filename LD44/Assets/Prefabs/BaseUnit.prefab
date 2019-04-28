@@ -148,15 +148,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bloodConsumper:
     bloodConsumpertion: 3
-    TimeForConsumpertion: 1
   health:
     maxHealth: 0
   price:
     blood: 0
     meat: 0
   speed: 5
-  isMoving: 0
-  isReachDestination: 0
+  awaliableAfter: 3
 --- !u!70 &58628753611483992
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

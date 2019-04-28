@@ -14,8 +14,10 @@ public class UnitBase : MonoBehaviour {
 	int pathPos;
 	Vector2[] path;
 	public float speed = 5;
-	public bool isMoving;
-	public bool isReachDestination;
+	internal bool isMoving;
+	internal bool isReachDestination;
+
+	public BuildingType awaliableAfter = BuildingType.None;
 
 	void Start() {
 		isMoving = false;

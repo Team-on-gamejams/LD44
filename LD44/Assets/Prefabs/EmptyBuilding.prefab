@@ -68,7 +68,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ba723f003a6ebcb459565f8309874914, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fa7fb988c0ba3c0409074d6f15700f99, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 4252029191415611874}
   - component: {fileID: 3775496258719772248}
   m_Layer: 8
-  m_Name: AdditionalHearth
+  m_Name: EmptyBuilding
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -128,22 +128,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bloodConsumper:
-    bloodConsumpertion: 0
+    bloodConsumpertion: 25
   health:
     maxHealth: 100
   price:
     blood: 0
-    meat: 100
+    meat: 50
   production:
-    blood: 100
+    blood: 0
     meat: 0
-    TimeForProd: 1
+    TimeForProd: 0
   capacity:
-    blood: 50
+    blood: 0
     meat: 0
-  awaliableAfter: 1
-  buildingType: 2
-  BuildTime: 1
+  awaliableAfter: 0
+  buildingType: 0
+  BuildTime: 2
   buildingSpriteAvaliable: {fileID: 0}
   buildingSpriteUnAvaliable: {fileID: 0}
 --- !u!61 &4252029191415611874
@@ -159,7 +159,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.04323846, y: 0.17736648}
+  m_Offset: {x: -0.021410942, y: -0.020640105}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -170,7 +170,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.982589, y: 1.1850758}
+  m_Size: {x: 1.4595273, y: 0.9823919}
   m_EdgeRadius: 0
 --- !u!50 &3775496258719772248
 Rigidbody2D:
@@ -261,7 +261,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: ba723f003a6ebcb459565f8309874914, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e6c28beff7259cd439afa82d7dafcfb3, type: 3}
   m_Color: {r: 0.014359593, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -340,8 +340,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: ba723f003a6ebcb459565f8309874914, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.047058824, a: 1}
+  m_Sprite: {fileID: 21300000, guid: e6c28beff7259cd439afa82d7dafcfb3, type: 3}
+  m_Color: {r: 0, g: 0.15642643, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
