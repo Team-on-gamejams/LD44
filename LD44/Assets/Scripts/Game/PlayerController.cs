@@ -54,8 +54,11 @@ public class PlayerController : MonoBehaviour {
 		}
 		else if (cursorMode == CursorMode.Build) {
 			if (Input.GetMouseButtonDown(0)) {
+				if (!currentBuildPref.buildForbidder.CanBuild)
+					return;
 				AddBuilding(currentBuildPref.spawnedGameObject.GetComponent<BuildingBase>());
 				Destroy(currentBuildPref.spawnedGameObject.GetComponent<StayOnCursorPos>());
+				Destroy(currentBuildPref.buildForbidder);
 				DisableBuildingMode();
 			}
 			else if (Input.GetMouseButtonDown(1)) {

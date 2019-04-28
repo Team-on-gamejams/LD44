@@ -7,6 +7,7 @@ public class StayOnCursorPos : MonoBehaviour {
 		if (GameManager.Instance.IsTimeStop)
 			return;
 
-		transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+		Vector3 newPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+		transform.position = new Vector3(newPos.x, newPos.y, -0.2f);
 	}
 }

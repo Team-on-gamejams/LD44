@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class ShopBuild : MonoBehaviour {
 	public GameObject buildPrefab;
 	public GameObject spawnedGameObject;
+	public BuildForbidder buildForbidder;
 	Image shopImage;
 
 	void Start() {
@@ -26,6 +27,7 @@ public class ShopBuild : MonoBehaviour {
 
 		spawnedGameObject = Instantiate(buildPrefab);
 		spawnedGameObject.AddComponent<StayOnCursorPos>();
+		buildForbidder = spawnedGameObject.AddComponent<BuildForbidder>();
 	}
 
 	public void DisableBuildMode() {

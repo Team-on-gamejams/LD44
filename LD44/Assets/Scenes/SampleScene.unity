@@ -261,6 +261,7 @@ GameObject:
   - component: {fileID: 78583884}
   - component: {fileID: 78583886}
   - component: {fileID: 78583885}
+  - component: {fileID: 78583887}
   m_Layer: 8
   m_Name: Building (4)
   m_TagString: Untagged
@@ -356,6 +357,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &78583887
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 78583883}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &81811761
 GameObject:
   m_ObjectHideFlags: 0
@@ -367,6 +389,7 @@ GameObject:
   - component: {fileID: 81811762}
   - component: {fileID: 81811764}
   - component: {fileID: 81811763}
+  - component: {fileID: 81811765}
   m_Layer: 8
   m_Name: Building (6)
   m_TagString: Untagged
@@ -462,6 +485,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &81811765
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 81811761}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &92834052
 GameObject:
   m_ObjectHideFlags: 0
@@ -473,6 +517,7 @@ GameObject:
   - component: {fileID: 92834053}
   - component: {fileID: 92834055}
   - component: {fileID: 92834054}
+  - component: {fileID: 92834056}
   m_Layer: 8
   m_Name: Building
   m_TagString: Untagged
@@ -568,6 +613,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &92834056
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 92834052}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &115662017
 GameObject:
   m_ObjectHideFlags: 0
@@ -579,6 +645,7 @@ GameObject:
   - component: {fileID: 115662018}
   - component: {fileID: 115662020}
   - component: {fileID: 115662019}
+  - component: {fileID: 115662021}
   m_Layer: 8
   m_Name: Building (4)
   m_TagString: Untagged
@@ -674,6 +741,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &115662021
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115662017}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &138624081
 GameObject:
   m_ObjectHideFlags: 0
@@ -828,6 +916,7 @@ GameObject:
   - component: {fileID: 150140087}
   - component: {fileID: 150140089}
   - component: {fileID: 150140088}
+  - component: {fileID: 150140090}
   m_Layer: 8
   m_Name: Building
   m_TagString: Untagged
@@ -923,6 +1012,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &150140090
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 150140086}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &153967299
 GameObject:
   m_ObjectHideFlags: 0
@@ -1094,6 +1204,7 @@ GameObject:
   - component: {fileID: 166411801}
   - component: {fileID: 166411803}
   - component: {fileID: 166411802}
+  - component: {fileID: 166411804}
   m_Layer: 8
   m_Name: Building (5)
   m_TagString: Untagged
@@ -1189,6 +1300,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &166411804
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166411800}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &166701106
 GameObject:
   m_ObjectHideFlags: 0
@@ -1200,6 +1332,7 @@ GameObject:
   - component: {fileID: 166701107}
   - component: {fileID: 166701109}
   - component: {fileID: 166701108}
+  - component: {fileID: 166701110}
   m_Layer: 8
   m_Name: Building (4)
   m_TagString: Untagged
@@ -1295,6 +1428,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &166701110
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166701106}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &169237084
 GameObject:
   m_ObjectHideFlags: 0
@@ -1392,6 +1546,7 @@ GameObject:
   - component: {fileID: 174823402}
   - component: {fileID: 174823404}
   - component: {fileID: 174823403}
+  - component: {fileID: 174823405}
   m_Layer: 8
   m_Name: Building
   m_TagString: Untagged
@@ -1487,6 +1642,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &174823405
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 174823401}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1001 &192874821
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1572,6 +1748,7 @@ GameObject:
   - component: {fileID: 199674616}
   - component: {fileID: 199674618}
   - component: {fileID: 199674617}
+  - component: {fileID: 199674619}
   m_Layer: 8
   m_Name: Building (6)
   m_TagString: Untagged
@@ -1667,6 +1844,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &199674619
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 199674615}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1001 &224599944
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1747,6 +1945,7 @@ GameObject:
   - component: {fileID: 230814086}
   - component: {fileID: 230814088}
   - component: {fileID: 230814087}
+  - component: {fileID: 230814089}
   m_Layer: 8
   m_Name: Building (5)
   m_TagString: Untagged
@@ -1842,6 +2041,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &230814089
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 230814085}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &232231054
 GameObject:
   m_ObjectHideFlags: 0
@@ -1996,6 +2216,7 @@ GameObject:
   - component: {fileID: 256314602}
   - component: {fileID: 256314604}
   - component: {fileID: 256314603}
+  - component: {fileID: 256314605}
   m_Layer: 8
   m_Name: Building (3)
   m_TagString: Untagged
@@ -2091,6 +2312,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &256314605
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 256314601}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &259938213
 GameObject:
   m_ObjectHideFlags: 0
@@ -2168,6 +2410,7 @@ GameObject:
   - component: {fileID: 271928446}
   - component: {fileID: 271928448}
   - component: {fileID: 271928447}
+  - component: {fileID: 271928449}
   m_Layer: 8
   m_Name: Building (5)
   m_TagString: Untagged
@@ -2263,6 +2506,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &271928449
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 271928445}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &274914524
 GameObject:
   m_ObjectHideFlags: 0
@@ -2774,6 +3038,7 @@ GameObject:
   - component: {fileID: 333946769}
   - component: {fileID: 333946771}
   - component: {fileID: 333946770}
+  - component: {fileID: 333946772}
   m_Layer: 8
   m_Name: Building (5)
   m_TagString: Untagged
@@ -2869,6 +3134,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &333946772
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 333946768}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &347995513
 GameObject:
   m_ObjectHideFlags: 0
@@ -2954,6 +3240,7 @@ GameObject:
   - component: {fileID: 351078719}
   - component: {fileID: 351078721}
   - component: {fileID: 351078720}
+  - component: {fileID: 351078722}
   m_Layer: 8
   m_Name: Building (4)
   m_TagString: Untagged
@@ -3049,6 +3336,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &351078722
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 351078718}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &355152242
 GameObject:
   m_ObjectHideFlags: 0
@@ -3220,6 +3528,7 @@ GameObject:
   - component: {fileID: 395557320}
   - component: {fileID: 395557322}
   - component: {fileID: 395557321}
+  - component: {fileID: 395557323}
   m_Layer: 8
   m_Name: Building (3)
   m_TagString: Untagged
@@ -3315,6 +3624,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &395557323
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 395557319}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &410931018
 GameObject:
   m_ObjectHideFlags: 0
@@ -3355,6 +3685,8 @@ MonoBehaviour:
   maxRes:
     blood: 0
     meat: 0
+  cursorMode: 0
+  currentBuildPref: {fileID: 0}
   unitSelection: {fileID: 0}
   aINavMeshGenerator: {fileID: 0}
 --- !u!114 &410931020
@@ -3420,6 +3752,7 @@ GameObject:
   - component: {fileID: 428368547}
   - component: {fileID: 428368549}
   - component: {fileID: 428368548}
+  - component: {fileID: 428368550}
   m_Layer: 8
   m_Name: Building (4)
   m_TagString: Untagged
@@ -3515,6 +3848,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &428368550
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 428368546}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1001 &460870829
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3595,6 +3949,7 @@ GameObject:
   - component: {fileID: 464178946}
   - component: {fileID: 464178948}
   - component: {fileID: 464178947}
+  - component: {fileID: 464178949}
   m_Layer: 8
   m_Name: Building (3)
   m_TagString: Untagged
@@ -3690,6 +4045,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &464178949
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 464178945}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &470296090
 GameObject:
   m_ObjectHideFlags: 0
@@ -3701,6 +4077,7 @@ GameObject:
   - component: {fileID: 470296091}
   - component: {fileID: 470296093}
   - component: {fileID: 470296092}
+  - component: {fileID: 470296094}
   m_Layer: 8
   m_Name: Building (3)
   m_TagString: Untagged
@@ -3796,6 +4173,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &470296094
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 470296090}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &482125539
 GameObject:
   m_ObjectHideFlags: 0
@@ -3807,6 +4205,7 @@ GameObject:
   - component: {fileID: 482125540}
   - component: {fileID: 482125542}
   - component: {fileID: 482125541}
+  - component: {fileID: 482125543}
   m_Layer: 8
   m_Name: Building (3)
   m_TagString: Untagged
@@ -3902,6 +4301,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &482125543
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 482125539}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &487933089
 GameObject:
   m_ObjectHideFlags: 0
@@ -3913,6 +4333,7 @@ GameObject:
   - component: {fileID: 487933090}
   - component: {fileID: 487933092}
   - component: {fileID: 487933091}
+  - component: {fileID: 487933093}
   m_Layer: 8
   m_Name: Building (1)
   m_TagString: Untagged
@@ -4008,6 +4429,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &487933093
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 487933089}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &492409723
 GameObject:
   m_ObjectHideFlags: 0
@@ -4019,6 +4461,7 @@ GameObject:
   - component: {fileID: 492409724}
   - component: {fileID: 492409726}
   - component: {fileID: 492409725}
+  - component: {fileID: 492409727}
   m_Layer: 8
   m_Name: Building (3)
   m_TagString: Untagged
@@ -4114,6 +4557,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &492409727
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 492409723}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1001 &499707521
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4268,6 +4732,7 @@ GameObject:
   - component: {fileID: 510708961}
   - component: {fileID: 510708963}
   - component: {fileID: 510708962}
+  - component: {fileID: 510708964}
   m_Layer: 8
   m_Name: Building (1)
   m_TagString: Untagged
@@ -4363,6 +4828,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &510708964
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 510708960}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -4475,12 +4961,12 @@ PrefabInstance:
     - target: {fileID: 1224078448456859098, guid: 3535c20bb6c424044bac2ef9fcd97b23,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.651
+      value: -2.13
       objectReference: {fileID: 0}
     - target: {fileID: 1224078448456859098, guid: 3535c20bb6c424044bac2ef9fcd97b23,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.361
+      value: 2.58
       objectReference: {fileID: 0}
     - target: {fileID: 1224078448456859098, guid: 3535c20bb6c424044bac2ef9fcd97b23,
         type: 3}
@@ -4540,6 +5026,7 @@ GameObject:
   - component: {fileID: 533746230}
   - component: {fileID: 533746232}
   - component: {fileID: 533746231}
+  - component: {fileID: 533746233}
   m_Layer: 8
   m_Name: Building (6)
   m_TagString: Untagged
@@ -4635,6 +5122,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &533746233
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 533746229}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &536146189
 GameObject:
   m_ObjectHideFlags: 0
@@ -4646,6 +5154,7 @@ GameObject:
   - component: {fileID: 536146190}
   - component: {fileID: 536146192}
   - component: {fileID: 536146191}
+  - component: {fileID: 536146193}
   m_Layer: 8
   m_Name: Building (5)
   m_TagString: Untagged
@@ -4741,6 +5250,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &536146193
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 536146189}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &602985966
 GameObject:
   m_ObjectHideFlags: 0
@@ -4752,6 +5282,7 @@ GameObject:
   - component: {fileID: 602985967}
   - component: {fileID: 602985969}
   - component: {fileID: 602985968}
+  - component: {fileID: 602985970}
   m_Layer: 8
   m_Name: Building
   m_TagString: Untagged
@@ -4847,6 +5378,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &602985970
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 602985966}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &629609766
 GameObject:
   m_ObjectHideFlags: 0
@@ -5027,6 +5579,7 @@ GameObject:
   - component: {fileID: 643528087}
   - component: {fileID: 643528089}
   - component: {fileID: 643528088}
+  - component: {fileID: 643528090}
   m_Layer: 8
   m_Name: Building (2)
   m_TagString: Untagged
@@ -5122,6 +5675,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &643528090
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 643528086}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &698396422
 GameObject:
   m_ObjectHideFlags: 0
@@ -5207,6 +5781,7 @@ GameObject:
   - component: {fileID: 720627918}
   - component: {fileID: 720627920}
   - component: {fileID: 720627919}
+  - component: {fileID: 720627921}
   m_Layer: 8
   m_Name: Building (1)
   m_TagString: Untagged
@@ -5302,6 +5877,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &720627921
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 720627917}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &747921604
 GameObject:
   m_ObjectHideFlags: 0
@@ -5313,6 +5909,7 @@ GameObject:
   - component: {fileID: 747921605}
   - component: {fileID: 747921607}
   - component: {fileID: 747921606}
+  - component: {fileID: 747921608}
   m_Layer: 8
   m_Name: Building (2)
   m_TagString: Untagged
@@ -5408,6 +6005,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &747921608
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 747921604}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1001 &781989878
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5488,6 +6106,7 @@ GameObject:
   - component: {fileID: 852742948}
   - component: {fileID: 852742950}
   - component: {fileID: 852742949}
+  - component: {fileID: 852742951}
   m_Layer: 8
   m_Name: Building (2)
   m_TagString: Untagged
@@ -5583,6 +6202,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &852742951
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 852742947}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &857788414
 GameObject:
   m_ObjectHideFlags: 0
@@ -5594,6 +6234,7 @@ GameObject:
   - component: {fileID: 857788415}
   - component: {fileID: 857788417}
   - component: {fileID: 857788416}
+  - component: {fileID: 857788418}
   m_Layer: 8
   m_Name: Building (1)
   m_TagString: Untagged
@@ -5689,6 +6330,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &857788418
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 857788414}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &866404302
 GameObject:
   m_ObjectHideFlags: 0
@@ -5891,6 +6553,7 @@ GameObject:
   - component: {fileID: 894255501}
   - component: {fileID: 894255503}
   - component: {fileID: 894255502}
+  - component: {fileID: 894255504}
   m_Layer: 8
   m_Name: Building (2)
   m_TagString: Untagged
@@ -5986,6 +6649,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &894255504
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 894255500}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &896043198
 GameObject:
   m_ObjectHideFlags: 0
@@ -5997,6 +6681,7 @@ GameObject:
   - component: {fileID: 896043199}
   - component: {fileID: 896043201}
   - component: {fileID: 896043200}
+  - component: {fileID: 896043202}
   m_Layer: 8
   m_Name: Building (4)
   m_TagString: Untagged
@@ -6092,6 +6777,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &896043202
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 896043198}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &896999499
 GameObject:
   m_ObjectHideFlags: 0
@@ -6484,6 +7190,7 @@ GameObject:
   - component: {fileID: 955158482}
   - component: {fileID: 955158484}
   - component: {fileID: 955158483}
+  - component: {fileID: 955158485}
   m_Layer: 8
   m_Name: Building (4)
   m_TagString: Untagged
@@ -6579,6 +7286,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &955158485
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 955158481}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &975522762
 GameObject:
   m_ObjectHideFlags: 0
@@ -6886,6 +7614,7 @@ GameObject:
   - component: {fileID: 1046598708}
   - component: {fileID: 1046598710}
   - component: {fileID: 1046598709}
+  - component: {fileID: 1046598711}
   m_Layer: 8
   m_Name: Building (2)
   m_TagString: Untagged
@@ -6981,6 +7710,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1046598711
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1046598707}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1063410581
 GameObject:
   m_ObjectHideFlags: 0
@@ -6992,6 +7742,7 @@ GameObject:
   - component: {fileID: 1063410582}
   - component: {fileID: 1063410584}
   - component: {fileID: 1063410583}
+  - component: {fileID: 1063410585}
   m_Layer: 8
   m_Name: Building (3)
   m_TagString: Untagged
@@ -7087,6 +7838,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1063410585
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1063410581}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1001 &1064851771
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7167,6 +7939,7 @@ GameObject:
   - component: {fileID: 1075045166}
   - component: {fileID: 1075045168}
   - component: {fileID: 1075045167}
+  - component: {fileID: 1075045169}
   m_Layer: 8
   m_Name: Building (2)
   m_TagString: Untagged
@@ -7262,6 +8035,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1075045169
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1075045165}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1001 &1082344472
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7342,6 +8136,7 @@ GameObject:
   - component: {fileID: 1089213678}
   - component: {fileID: 1089213680}
   - component: {fileID: 1089213679}
+  - component: {fileID: 1089213681}
   m_Layer: 8
   m_Name: Building (1)
   m_TagString: Untagged
@@ -7437,6 +8232,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1089213681
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1089213677}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1131937855
 GameObject:
   m_ObjectHideFlags: 0
@@ -7522,6 +8338,7 @@ GameObject:
   - component: {fileID: 1144474867}
   - component: {fileID: 1144474869}
   - component: {fileID: 1144474868}
+  - component: {fileID: 1144474870}
   m_Layer: 8
   m_Name: Building (6)
   m_TagString: Untagged
@@ -7617,6 +8434,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1144474870
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1144474866}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1155771688
 GameObject:
   m_ObjectHideFlags: 0
@@ -7730,7 +8568,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1bcf547577ec344288ce087e7852f1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buildPrefab: {fileID: 0}
+  buildPrefab: {fileID: 4252029191415611879, guid: 1130c72ca874d9544bc108c0e848be43,
+    type: 3}
+  spawnedGameObject: {fileID: 0}
 --- !u!1001 &1165427056
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7902,6 +8742,7 @@ GameObject:
   - component: {fileID: 1189259523}
   - component: {fileID: 1189259525}
   - component: {fileID: 1189259524}
+  - component: {fileID: 1189259526}
   m_Layer: 8
   m_Name: Building (3)
   m_TagString: Untagged
@@ -7997,6 +8838,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1189259526
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1189259522}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1200086862
 GameObject:
   m_ObjectHideFlags: 0
@@ -8094,6 +8956,7 @@ GameObject:
   - component: {fileID: 1206743839}
   - component: {fileID: 1206743841}
   - component: {fileID: 1206743840}
+  - component: {fileID: 1206743842}
   m_Layer: 8
   m_Name: Building (4)
   m_TagString: Untagged
@@ -8189,6 +9052,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1206743842
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1206743838}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1216506538
 GameObject:
   m_ObjectHideFlags: 0
@@ -8200,6 +9084,7 @@ GameObject:
   - component: {fileID: 1216506539}
   - component: {fileID: 1216506541}
   - component: {fileID: 1216506540}
+  - component: {fileID: 1216506542}
   m_Layer: 8
   m_Name: Building
   m_TagString: Untagged
@@ -8295,6 +9180,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1216506542
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1216506538}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1001 &1218092361
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8449,6 +9355,7 @@ GameObject:
   - component: {fileID: 1258388700}
   - component: {fileID: 1258388702}
   - component: {fileID: 1258388701}
+  - component: {fileID: 1258388703}
   m_Layer: 8
   m_Name: Building (5)
   m_TagString: Untagged
@@ -8544,6 +9451,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1258388703
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258388699}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1273775957
 GameObject:
   m_ObjectHideFlags: 0
@@ -8633,12 +9561,12 @@ PrefabInstance:
     - target: {fileID: 1224078448456859098, guid: 3535c20bb6c424044bac2ef9fcd97b23,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.6070001
+      value: 1.71
       objectReference: {fileID: 0}
     - target: {fileID: 1224078448456859098, guid: 3535c20bb6c424044bac2ef9fcd97b23,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.174
+      value: -0.09
       objectReference: {fileID: 0}
     - target: {fileID: 1224078448456859098, guid: 3535c20bb6c424044bac2ef9fcd97b23,
         type: 3}
@@ -8698,6 +9626,7 @@ GameObject:
   - component: {fileID: 1297678143}
   - component: {fileID: 1297678145}
   - component: {fileID: 1297678144}
+  - component: {fileID: 1297678146}
   m_Layer: 8
   m_Name: Building (6)
   m_TagString: Untagged
@@ -8793,6 +9722,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1297678146
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1297678142}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1001 &1301509263
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8873,6 +9823,7 @@ GameObject:
   - component: {fileID: 1330163135}
   - component: {fileID: 1330163137}
   - component: {fileID: 1330163136}
+  - component: {fileID: 1330163138}
   m_Layer: 8
   m_Name: Building (2)
   m_TagString: Untagged
@@ -8968,6 +9919,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1330163138
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1330163134}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1333034122
 GameObject:
   m_ObjectHideFlags: 0
@@ -8979,6 +9951,7 @@ GameObject:
   - component: {fileID: 1333034123}
   - component: {fileID: 1333034125}
   - component: {fileID: 1333034124}
+  - component: {fileID: 1333034126}
   m_Layer: 8
   m_Name: Building (1)
   m_TagString: Untagged
@@ -9074,6 +10047,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1333034126
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1333034122}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1336519281
 GameObject:
   m_ObjectHideFlags: 0
@@ -9085,6 +10079,7 @@ GameObject:
   - component: {fileID: 1336519282}
   - component: {fileID: 1336519284}
   - component: {fileID: 1336519283}
+  - component: {fileID: 1336519285}
   m_Layer: 8
   m_Name: Building (4)
   m_TagString: Untagged
@@ -9180,6 +10175,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1336519285
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1336519281}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1341369576
 GameObject:
   m_ObjectHideFlags: 0
@@ -9270,12 +10286,12 @@ PrefabInstance:
     - target: {fileID: 1224078448456859098, guid: 3535c20bb6c424044bac2ef9fcd97b23,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.3630003
+      value: -1.51
       objectReference: {fileID: 0}
     - target: {fileID: 1224078448456859098, guid: 3535c20bb6c424044bac2ef9fcd97b23,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.967
+      value: 1.24
       objectReference: {fileID: 0}
     - target: {fileID: 1224078448456859098, guid: 3535c20bb6c424044bac2ef9fcd97b23,
         type: 3}
@@ -9558,6 +10574,7 @@ GameObject:
   - component: {fileID: 1465612176}
   - component: {fileID: 1465612178}
   - component: {fileID: 1465612177}
+  - component: {fileID: 1465612179}
   m_Layer: 8
   m_Name: Building (6)
   m_TagString: Untagged
@@ -9653,6 +10670,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1465612179
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465612175}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1001 &1467803667
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9871,6 +10909,7 @@ GameObject:
   - component: {fileID: 1504288611}
   - component: {fileID: 1504288613}
   - component: {fileID: 1504288612}
+  - component: {fileID: 1504288614}
   m_Layer: 8
   m_Name: Building
   m_TagString: Untagged
@@ -9966,6 +11005,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1504288614
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504288610}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1001 &1565988458
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10115,6 +11175,7 @@ GameObject:
   - component: {fileID: 1596488095}
   - component: {fileID: 1596488097}
   - component: {fileID: 1596488096}
+  - component: {fileID: 1596488098}
   m_Layer: 8
   m_Name: Building (5)
   m_TagString: Untagged
@@ -10210,6 +11271,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1596488098
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1596488094}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1001 &1596876393
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10443,6 +11525,7 @@ GameObject:
   - component: {fileID: 1617660984}
   - component: {fileID: 1617660986}
   - component: {fileID: 1617660985}
+  - component: {fileID: 1617660987}
   m_Layer: 8
   m_Name: Building (1)
   m_TagString: Untagged
@@ -10538,6 +11621,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1617660987
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1617660983}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1664853629
 GameObject:
   m_ObjectHideFlags: 0
@@ -10549,6 +11653,7 @@ GameObject:
   - component: {fileID: 1664853630}
   - component: {fileID: 1664853632}
   - component: {fileID: 1664853631}
+  - component: {fileID: 1664853633}
   m_Layer: 8
   m_Name: Building (5)
   m_TagString: Untagged
@@ -10644,6 +11749,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1664853633
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1664853629}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1712544791
 GameObject:
   m_ObjectHideFlags: 0
@@ -10934,6 +12060,7 @@ GameObject:
   - component: {fileID: 1739956147}
   - component: {fileID: 1739956149}
   - component: {fileID: 1739956148}
+  - component: {fileID: 1739956150}
   m_Layer: 8
   m_Name: Building (5)
   m_TagString: Untagged
@@ -11029,6 +12156,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1739956150
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1739956146}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1757714550
 GameObject:
   m_ObjectHideFlags: 0
@@ -11114,6 +12262,7 @@ GameObject:
   - component: {fileID: 1778515450}
   - component: {fileID: 1778515452}
   - component: {fileID: 1778515451}
+  - component: {fileID: 1778515453}
   m_Layer: 8
   m_Name: Building (6)
   m_TagString: Untagged
@@ -11209,6 +12358,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1778515453
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778515449}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1782035258
 GameObject:
   m_ObjectHideFlags: 0
@@ -11220,6 +12390,7 @@ GameObject:
   - component: {fileID: 1782035259}
   - component: {fileID: 1782035261}
   - component: {fileID: 1782035260}
+  - component: {fileID: 1782035262}
   m_Layer: 8
   m_Name: Building
   m_TagString: Untagged
@@ -11315,6 +12486,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1782035262
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1782035258}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1801617483
 GameObject:
   m_ObjectHideFlags: 0
@@ -11400,6 +12592,7 @@ GameObject:
   - component: {fileID: 1802776166}
   - component: {fileID: 1802776168}
   - component: {fileID: 1802776167}
+  - component: {fileID: 1802776169}
   m_Layer: 8
   m_Name: Building (6)
   m_TagString: Untagged
@@ -11495,6 +12688,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1802776169
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1802776165}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1808071677
 GameObject:
   m_ObjectHideFlags: 0
@@ -11506,6 +12720,7 @@ GameObject:
   - component: {fileID: 1808071678}
   - component: {fileID: 1808071680}
   - component: {fileID: 1808071679}
+  - component: {fileID: 1808071681}
   m_Layer: 8
   m_Name: Building (6)
   m_TagString: Untagged
@@ -11601,6 +12816,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1808071681
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1808071677}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1828575560
 GameObject:
   m_ObjectHideFlags: 0
@@ -11698,6 +12934,7 @@ GameObject:
   - component: {fileID: 1841745581}
   - component: {fileID: 1841745583}
   - component: {fileID: 1841745582}
+  - component: {fileID: 1841745584}
   m_Layer: 8
   m_Name: Building (1)
   m_TagString: Untagged
@@ -11793,6 +13030,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1841745584
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1841745580}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1844728144
 GameObject:
   m_ObjectHideFlags: 0
@@ -11952,6 +13210,7 @@ GameObject:
   - component: {fileID: 1867317066}
   - component: {fileID: 1867317068}
   - component: {fileID: 1867317067}
+  - component: {fileID: 1867317069}
   m_Layer: 8
   m_Name: Building (2)
   m_TagString: Untagged
@@ -12047,6 +13306,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1867317069
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1867317065}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1870906904
 GameObject:
   m_ObjectHideFlags: 0
@@ -12176,6 +13456,7 @@ GameObject:
   - component: {fileID: 1899324201}
   - component: {fileID: 1899324203}
   - component: {fileID: 1899324202}
+  - component: {fileID: 1899324204}
   m_Layer: 8
   m_Name: Building
   m_TagString: Untagged
@@ -12271,6 +13552,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1899324204
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899324200}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1001 &1906264718
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12351,6 +13653,7 @@ GameObject:
   - component: {fileID: 1986390097}
   - component: {fileID: 1986390099}
   - component: {fileID: 1986390098}
+  - component: {fileID: 1986390100}
   m_Layer: 8
   m_Name: Building (2)
   m_TagString: Untagged
@@ -12446,6 +13749,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1986390100
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1986390096}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1989522141
 GameObject:
   m_ObjectHideFlags: 0
@@ -12457,6 +13781,7 @@ GameObject:
   - component: {fileID: 1989522142}
   - component: {fileID: 1989522144}
   - component: {fileID: 1989522143}
+  - component: {fileID: 1989522145}
   m_Layer: 8
   m_Name: Building
   m_TagString: Untagged
@@ -12552,6 +13877,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1989522145
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1989522141}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1001 &1997492092
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12785,6 +14131,7 @@ GameObject:
   - component: {fileID: 2043773462}
   - component: {fileID: 2043773464}
   - component: {fileID: 2043773463}
+  - component: {fileID: 2043773465}
   m_Layer: 8
   m_Name: Building (1)
   m_TagString: Untagged
@@ -12880,6 +14227,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &2043773465
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2043773461}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &2059706708
 GameObject:
   m_ObjectHideFlags: 0
@@ -13034,6 +14402,7 @@ GameObject:
   - component: {fileID: 2065028968}
   - component: {fileID: 2065028970}
   - component: {fileID: 2065028969}
+  - component: {fileID: 2065028971}
   m_Layer: 8
   m_Name: Building (3)
   m_TagString: Untagged
@@ -13129,6 +14498,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &2065028971
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2065028967}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &2095676921
 GameObject:
   m_ObjectHideFlags: 0

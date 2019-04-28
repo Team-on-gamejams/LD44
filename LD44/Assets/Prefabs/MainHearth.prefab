@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4252029191415611875}
   - component: {fileID: 4252029191415611874}
   - component: {fileID: 4252029191415611884}
+  - component: {fileID: 4540484229314935428}
   m_Layer: 0
   m_Name: MainHearth
   m_TagString: Untagged
@@ -109,6 +110,8 @@ MonoBehaviour:
   capacity:
     blood: 1000
     meat: 1000
+  buildingSpriteAvaliable: {fileID: 0}
+  buildingSpriteUnAvaliable: {fileID: 0}
 --- !u!61 &4252029191415611874
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -154,3 +157,24 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!50 &4540484229314935428
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4252029191415611879}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
