@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class BloodLevelBarController : MonoBehaviour {
 	public Image fillImage;
+	public RectTransform wave;
 
 	void Awake() {
 		EventManager.BloodLevelChangedEvent += BloodLevelChangedEvent;
@@ -23,6 +24,7 @@ public class BloodLevelBarController : MonoBehaviour {
 		LeanTween.value(gameObject, fillImage.fillAmount, 1 - (GameManager.Instance.Player.bloodTake / GameManager.Instance.Player.bloodProd), 1.0f)
 		.setOnUpdate((float a)=> { 
 			fillImage.fillAmount = a;
+			wave.position = new Vector3(wave.position.x, fillImage.rectTransform.rect.height * a, wave.position.z);
 		});
 	}
 }
