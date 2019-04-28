@@ -5,15 +5,4 @@ using UnityEngine;
 [System.Serializable]
 public class BloodConsumper {
 	public float bloodConsumpertion;
-
-	public float TimeForConsumpertion = 1.0f;
-	float currTime = 0f;
-
-	public void Tick(float deltaTime) {
-		currTime += deltaTime;
-		while (currTime >= TimeForConsumpertion) {
-			currTime -= TimeForConsumpertion;
-			GameManager.Instance.Player.TakeBlood(bloodConsumpertion);
-		}
-	}
 }

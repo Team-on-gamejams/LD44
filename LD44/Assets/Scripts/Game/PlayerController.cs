@@ -27,6 +27,9 @@ public class PlayerController : MonoBehaviour {
 	public UnitSelectionComponent unitSelection;
 	public AINavMeshGenerator aINavMeshGenerator;
 
+	public float bloodProd;
+	public float bloodTake;
+
 	const float gameTickTime = 1.0f;
 	float currTickTime = 0f;
 
@@ -38,6 +41,8 @@ public class PlayerController : MonoBehaviour {
 		unitSelection = GetComponent<UnitSelectionComponent>();
 		currentBuildPref = null;
 		cursorMode = CursorMode.Normal;
+		bloodProd = 0;
+		bloodTake = 0;
 
 		GameManager.Instance.Player = this;
 	}
@@ -82,6 +87,8 @@ public class PlayerController : MonoBehaviour {
 
 	public void AddUnit(UnitBase unit){
 		units.Add(unit);
+		bloodTake += unit.bloodConsumper.bloodConsumpertion;
+		GameManager.Instance.EventManager.CallOnBloodLevelChangedEvent();
 	}
 
 	public void AddSelectedUnit(UnitBase unit) {
@@ -98,12 +105,13 @@ public class PlayerController : MonoBehaviour {
 	public void AddBuilding(BuildingBase building){
 		buildings.Add(building);
 		maxRes += building.capacity;
+		bloodProd += building.production.blood;
+		bloodTake += building.bloodConsumper.bloodConsumpertion;
+		GameManager.Instance.EventManager.CallOnBloodLevelChangedEvent();
 	}
 
 	public void AddResource(GameRes res) {
 		currRes += res;
-		if (currRes.blood > maxRes.blood)
-			currRes.blood = maxRes.blood;
 		if (currRes.meat > maxRes.meat)
 			currRes.meat = maxRes.meat;
 	}
@@ -114,15 +122,7 @@ public class PlayerController : MonoBehaviour {
 
 	public void TakeResource(GameRes res){
 		currRes -= res;
-		if (currRes.blood < 0)
-			currRes.blood = 0;
 		if (currRes.meat < 0)
 			currRes.meat = 0;
-	}
-
-	public void TakeBlood(float res) {
-		currRes.blood -= res;
-		if (currRes.blood < 0)
-			currRes.blood = 0;
 	}
 }

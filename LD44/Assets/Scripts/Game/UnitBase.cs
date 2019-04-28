@@ -31,8 +31,6 @@ public class UnitBase : MonoBehaviour {
 	void Update() {
 		if (GameManager.Instance.IsTimeStop)
 			return;
-
-		bloodConsumper.Tick(Time.deltaTime);
 	}
 
 	void OnCollisionEnter2D(Collision2D collision) {
