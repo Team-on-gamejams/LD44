@@ -1,13 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UnitBase : MonoBehaviour {
 	public BloodConsumper bloodConsumper;
 	public Health health;
 	public Price price;
 
-	GameObject selection;
+	SpriteRenderer selection;
 
 	Pathfinder pathfinder;
 	int pathPos;
@@ -19,7 +20,7 @@ public class UnitBase : MonoBehaviour {
 	void Start() {
 		isMoving = false;
 		isReachDestination = false;
-		selection = transform.Find("Selection").gameObject;
+		selection = transform.Find("Selection").gameObject.GetComponent<SpriteRenderer>();
 
 		LeanTween.delayedCall(1, () => {
 			pathfinder = new Pathfinder(GameManager.Instance.Player.aINavMeshGenerator);
@@ -44,11 +45,11 @@ public class UnitBase : MonoBehaviour {
 	}
 
 	public void Select(){
-		selection.SetActive(true);
+		SetAlpha(selection, 1.0f);
 	}
 
 	public void UnSelect() {
-		selection.SetActive(false);
+		SetAlpha(selection, 0.0f);
 	}
 
 	public void MoveTo(Vector2 pos){
@@ -108,5 +109,11 @@ public class UnitBase : MonoBehaviour {
 		if(!isMoving){
 			isReachDestination = false;
 		}
+	}
+
+	void SetAlpha(SpriteRenderer image, float a) {
+		Color color = image.color;
+		color.a = a;
+		image.color = color;
 	}
 }
