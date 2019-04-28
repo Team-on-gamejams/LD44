@@ -9,6 +9,8 @@ public class BuildingBase : MonoBehaviour {
 	public Production production;
 	public Capacity capacity;
 
+	public float BuildTime = 1.0f;
+
 	public GameObject buildingSpriteAvaliable;
 	public GameObject buildingSpriteUnAvaliable;
 
