@@ -59,12 +59,18 @@ public class PlayerController : MonoBehaviour {
 				AddBuilding(currentBuildPref.spawnedGameObject.GetComponent<BuildingBase>());
 				Destroy(currentBuildPref.spawnedGameObject.GetComponent<StayOnCursorPos>());
 				Destroy(currentBuildPref.buildForbidder);
-				DisableBuildingMode();
+				BuildInBuildingMode();
 			}
 			else if (Input.GetMouseButtonDown(1)) {
 				Destroy(currentBuildPref.spawnedGameObject);
 				DisableBuildingMode();
 			}
+		}
+	}
+
+	public void BuildInBuildingMode() {
+		if (currentBuildPref != null) {
+			currentBuildPref.Build();
 		}
 	}
 

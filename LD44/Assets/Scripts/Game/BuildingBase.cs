@@ -9,6 +9,8 @@ public class BuildingBase : MonoBehaviour {
 	public Production production;
 	public Capacity capacity;
 
+	public float BuildTime = 1.0f;
+
 	public GameObject buildingSpriteAvaliable;
 	public GameObject buildingSpriteUnAvaliable;
 
@@ -21,8 +23,10 @@ public class BuildingBase : MonoBehaviour {
 		if (GameManager.Instance.IsTimeStop)
 			return;
 
-		bloodConsumper.Tick(Time.deltaTime);
-		production.Tick(Time.deltaTime);
+		if(bloodConsumper.TimeForConsumpertion != 0)
+			bloodConsumper.Tick(Time.deltaTime);
+		if(production.TimeForProd != 0)
+			production.Tick(Time.deltaTime);
 	}
 }
 
