@@ -4,23 +4,29 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class ShopController : MonoBehaviour {
-	GameObject buildMenu;
-	GameObject hireMenu;
+	CanvasGroup buildMenu;
+	CanvasGroup hireMenu;
 	Button buildButton;
 	Button hireButton;
 
 	void Start() {
-		buildMenu = transform.Find("BuildPanel").gameObject;
-		hireMenu = transform.Find("HirePanel").gameObject;
+		buildMenu = transform.Find("BuildPanel").gameObject.GetComponent<CanvasGroup>();
+		hireMenu = transform.Find("HirePanel").gameObject.GetComponent<CanvasGroup>();
 		buildButton = transform.Find("ButtonBuild").gameObject.GetComponent<Button>();
 		hireButton = transform.Find("ButtonHire").gameObject.GetComponent<Button>();
 
-		ShowBuildMenu();
+		ShowHireMenu();
 	}
 
 	public void ShowBuildMenu(){
-		buildMenu.SetActive(true);
-		hireMenu.SetActive(false);
+		buildMenu.alpha = 1.0f;
+		buildMenu.interactable = true;
+		buildMenu.blocksRaycasts = true;
+
+		hireMenu.alpha = 0.0f;
+		hireMenu.interactable = false;
+		hireMenu.blocksRaycasts = false;
+
 		buildButton.interactable = true;
 		hireButton.interactable = false;
 		buildButton.interactable = false;
@@ -28,8 +34,14 @@ public class ShopController : MonoBehaviour {
 	}
 
 	public void ShowHireMenu() {
-		hireMenu.SetActive(true);
-		buildMenu.SetActive(false);
+		hireMenu.alpha = 1.0f;
+		hireMenu.interactable = true;
+		hireMenu.blocksRaycasts = true;
+
+		buildMenu.alpha = 0.0f;
+		buildMenu.interactable = false;
+		buildMenu.blocksRaycasts = false;
+
 		buildButton.interactable = true;
 		hireButton.interactable = false;
 	}

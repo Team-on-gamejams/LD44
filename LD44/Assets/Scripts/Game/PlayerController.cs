@@ -12,6 +12,8 @@ public class PlayerController : MonoBehaviour {
 
 	[SerializeField] List<BuildingType> buildingTypes;
 	[SerializeField] List<BuildingBase> buildings;
+	[SerializeField] List<BuildingBase> baraks;
+	public List<BuildingBase> Baraks => baraks;
 
 	[SerializeField] List<UnitBase> units;
 	public List<UnitBase> Units => units;
@@ -36,6 +38,7 @@ public class PlayerController : MonoBehaviour {
 		buildings = new List<BuildingBase>();
 		units = new List<UnitBase>();
 		selectedUnits = new List<UnitBase>();
+		baraks = new List<BuildingBase>();
 		aINavMeshGenerator = GetComponent<AINavMeshGenerator>();
 		unitSelection = GetComponent<UnitSelectionComponent>();
 		currentBuildPref = null;
@@ -107,8 +110,10 @@ public class PlayerController : MonoBehaviour {
 		bloodProd += building.production.blood;
 		bloodTake += building.bloodConsumper.bloodConsumpertion;
 		GameManager.Instance.EventManager.CallOnBloodLevelChangedEvent();
+		if (building.buildingType == BuildingType.Baraks)
+			baraks.Add(building);
 
-		if(!buildingTypes.Contains(building.buildingType)){
+		if (!buildingTypes.Contains(building.buildingType)){
 			buildingTypes.Add(building.buildingType);
 			EventData ed = new EventData("AddBuilding");
 			ed.Data["Action"] = "Add";
@@ -119,6 +124,8 @@ public class PlayerController : MonoBehaviour {
 
 	public void RemoveBuilding(BuildingBase building) {
 		buildings.Remove(building);
+		if (baraks.Contains(building))
+			baraks.Remove(building);
 		maxRes -= building.capacity;
 		bloodProd -= building.production.blood;
 		bloodTake -= building.bloodConsumper.bloodConsumpertion;

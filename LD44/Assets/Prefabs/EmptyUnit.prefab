@@ -112,7 +112,7 @@ GameObject:
   - component: {fileID: 58628753611483992}
   - component: {fileID: 1799601910757823661}
   m_Layer: 0
-  m_Name: BaseUnit
+  m_Name: EmptyUnit
   m_TagString: Unit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -149,12 +149,12 @@ MonoBehaviour:
   bloodConsumper:
     bloodConsumpertion: 3
   health:
-    maxHealth: 100
+    maxHealth: 0
   price:
     blood: 0
-    meat: 10
+    meat: 0
   speed: 5
-  awaliableAfter: 3
+  awaliableAfter: 0
   buildTime: 1
 --- !u!70 &58628753611483992
 CapsuleCollider2D:
@@ -281,7 +281,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: eda40514e8619f64bb230ae02e62e953, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fa7fb988c0ba3c0409074d6f15700f99, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

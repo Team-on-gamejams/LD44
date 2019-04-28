@@ -18,6 +18,7 @@ public class UnitBase : MonoBehaviour {
 	internal bool isReachDestination;
 
 	public BuildingType awaliableAfter = BuildingType.None;
+	public float buildTime = 1.0f;
 
 	void Start() {
 		isMoving = false;

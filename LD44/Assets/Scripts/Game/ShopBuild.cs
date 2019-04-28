@@ -17,6 +17,7 @@ public class ShopBuild : MonoBehaviour {
 	float currBuildTime;
 
 	public float startingAlpha;
+	bool isShowed;
 
 	void Start() {
 		shopImage = transform.Find("ShopImage").GetComponent<Image>();
@@ -45,6 +46,9 @@ public class ShopBuild : MonoBehaviour {
 	}
 
 	public void OnClick(){
+		if (!isShowed)
+			return;
+
 		if (GameManager.Instance.Player.cursorMode == CursorMode.Normal) {
 			if (isBuilded) {
 				EnableBuildMode();
@@ -109,11 +113,13 @@ public class ShopBuild : MonoBehaviour {
 	void Show() {
 		SetAlpha(shopImage, startingAlpha);
 		SetAlpha(text, 1.0f);
+		isShowed = true;
 	}
 
 	void Hide() {
 		SetAlpha(shopImage, 0.0f);
 		SetAlpha(text, 0.0f);
+		isShowed = false;
 	}
 
 	void SetAlpha(MaskableGraphic image, float a) {
