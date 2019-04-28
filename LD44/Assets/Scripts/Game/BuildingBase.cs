@@ -23,8 +23,10 @@ public class BuildingBase : MonoBehaviour {
 		if (GameManager.Instance.IsTimeStop)
 			return;
 
-		bloodConsumper.Tick(Time.deltaTime);
-		production.Tick(Time.deltaTime);
+		if(bloodConsumper.TimeForConsumpertion != 0)
+			bloodConsumper.Tick(Time.deltaTime);
+		if(production.TimeForProd != 0)
+			production.Tick(Time.deltaTime);
 	}
 }
 
