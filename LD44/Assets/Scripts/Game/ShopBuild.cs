@@ -8,7 +8,7 @@ public class ShopBuild : MonoBehaviour {
 	public GameObject buildPrefab;
 	public GameObject spawnedGameObject;
 	public BuildForbidder buildForbidder;
-	BuildingBase buildingBase;
+	internal BuildingBase buildingBase;
 	Image shopImage;
 	TextMeshProUGUI text;
 
@@ -16,7 +16,7 @@ public class ShopBuild : MonoBehaviour {
 	bool isBuilded;
 	float currBuildTime;
 
-	float startingAlpha;
+	public float startingAlpha;
 
 	void Start() {
 		shopImage = transform.Find("ShopImage").GetComponent<Image>();
@@ -26,6 +26,10 @@ public class ShopBuild : MonoBehaviour {
 		isBuilded = false;
 		isBuilding = false;
 		startingAlpha = shopImage.color.a;
+
+		shopImage = transform.Find("ShopImage").GetComponent<Image>();
+		text = transform.Find("Text").GetComponent<TextMeshProUGUI>();
+		Hide();
 	}
 
 	void Update() {
@@ -41,21 +45,24 @@ public class ShopBuild : MonoBehaviour {
 	}
 
 	public void OnClick(){
-		if (isBuilded) {
-			EnableBuildMode();
-		}
-		else if (!isBuilding) {
-			if (GameManager.Instance.Player.CanTakeResource(buildingBase.price)) {
-				GameManager.Instance.Player.TakeResource(buildingBase.price);
-				SetAlpha(shopImage, 1f);
-				isBuilding = true;
-				currBuildTime = 0;
-				shopImage.fillAmount = 0;
+		if (GameManager.Instance.Player.cursorMode == CursorMode.Normal) {
+			if (isBuilded) {
+				EnableBuildMode();
+			}
+			else if (!isBuilding) {
+				if (GameManager.Instance.Player.CanTakeResource(buildingBase.price)) {
+					GameManager.Instance.Player.TakeResource(buildingBase.price);
+					SetAlpha(shopImage, 1f);
+					isBuilding = true;
+					currBuildTime = 0;
+					shopImage.fillAmount = 0;
+				}
 			}
 		}
 	}
 
 	public void EnableBuildMode(){
+		SetAlpha(shopImage, startingAlpha);
 		GameManager.Instance.Player.cursorMode = CursorMode.Build;
 		GameManager.Instance.Player.currentBuildPref = this;
 
@@ -65,8 +72,8 @@ public class ShopBuild : MonoBehaviour {
 	}
 
 	public void DisableBuildMode() {
-		if(!isBuilded)
-			SetAlpha(shopImage, startingAlpha);
+		if(isBuilded)
+			SetAlpha(shopImage, 1.0f);
 		GameManager.Instance.Player.cursorMode = CursorMode.Normal;
 		GameManager.Instance.Player.currentBuildPref = null;
 		spawnedGameObject = null;
@@ -75,6 +82,44 @@ public class ShopBuild : MonoBehaviour {
 	public void Build() {
 		isBuilded = false;
 		DisableBuildMode();
+	}
+
+
+	void Awake() {
+		EventManager.ChangeBuildingsListEvent += BloodLevelChangedEvent;
+	}
+
+	void OnDestroy() {
+		EventManager.ChangeBuildingsListEvent -= BloodLevelChangedEvent;
+	}
+
+	void BloodLevelChangedEvent(EventData ed) {
+		if (ed?.Data["Action"] as string == "Add") {
+			BuildingType.TryParse(ed.Data["Value"] as string, out BuildingType type);
+			if (type == buildingBase.awaliableAfter)
+				Show();
+		}
+		else if (ed?.Data["Action"] as string == "Remove") {
+			BuildingType.TryParse(ed.Data["Value"] as string, out BuildingType type);
+			if (type == buildingBase.awaliableAfter)
+				Hide();
+		}
+	}
+
+	void Show() {
+		SetAlpha(shopImage, startingAlpha);
+		SetAlpha(text, 1.0f);
+	}
+
+	void Hide() {
+		SetAlpha(shopImage, 0.0f);
+		SetAlpha(text, 0.0f);
+	}
+
+	void SetAlpha(MaskableGraphic image, float a) {
+		Color color = image.color;
+		color.a = a;
+		image.color = color;
 	}
 
 	void SetAlpha(Image image, float a){

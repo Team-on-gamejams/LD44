@@ -10,6 +10,7 @@ public enum CursorMode {
 
 public class PlayerController : MonoBehaviour {
 
+	[SerializeField] List<BuildingType> buildingTypes;
 	[SerializeField] List<BuildingBase> buildings;
 
 	[SerializeField] List<UnitBase> units;
@@ -30,10 +31,8 @@ public class PlayerController : MonoBehaviour {
 	public float bloodProd;
 	public float bloodTake;
 
-	const float gameTickTime = 1.0f;
-	float currTickTime = 0f;
-
 	void Start() {
+		buildingTypes = new List<BuildingType>();
 		buildings = new List<BuildingBase>();
 		units = new List<UnitBase>();
 		selectedUnits = new List<UnitBase>();
@@ -108,6 +107,37 @@ public class PlayerController : MonoBehaviour {
 		bloodProd += building.production.blood;
 		bloodTake += building.bloodConsumper.bloodConsumpertion;
 		GameManager.Instance.EventManager.CallOnBloodLevelChangedEvent();
+
+		if(!buildingTypes.Contains(building.buildingType)){
+			buildingTypes.Add(building.buildingType);
+			EventData ed = new EventData("AddBuilding");
+			ed.Data["Action"] = "Add";
+			ed.Data["Value"] = building.buildingType.ToString();
+			GameManager.Instance.EventManager.CallOnChangeBuildingsListEvent(ed);
+		}
+	}
+
+	public void RemoveBuilding(BuildingBase building) {
+		buildings.Remove(building);
+		maxRes -= building.capacity;
+		bloodProd -= building.production.blood;
+		bloodTake -= building.bloodConsumper.bloodConsumpertion;
+		GameManager.Instance.EventManager.CallOnBloodLevelChangedEvent();
+
+		bool findAnother = false;
+		foreach (var i in buildings) {
+			if(i.buildingType == building.buildingType){
+				findAnother = true;
+				break;
+			}
+		}
+		if (!findAnother) {
+			buildingTypes.Remove(building.buildingType);
+			EventData ed = new EventData("AddBuilding");
+			ed.Data["Action"] = "Remove";
+			ed.Data["Value"] = building.buildingType.ToString();
+			GameManager.Instance.EventManager.CallOnChangeBuildingsListEvent(ed);
+		}
 	}
 
 	public void AddResource(GameRes res) {

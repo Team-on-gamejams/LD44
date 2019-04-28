@@ -97,7 +97,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bloodConsumper:
     bloodConsumpertion: 0
-    TimeForConsumpertion: 0
   health:
     maxHealth: 100
   price:
@@ -110,6 +109,7 @@ MonoBehaviour:
   capacity:
     blood: 1000
     meat: 1000
+  buildingType: 1
   BuildTime: 1
   buildingSpriteAvaliable: {fileID: 0}
   buildingSpriteUnAvaliable: {fileID: 0}

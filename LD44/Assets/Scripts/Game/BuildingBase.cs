@@ -2,6 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum BuildingType {
+	None,
+	MainHearth,
+	AdditionalHearth,
+	Baraks,
+}
+
 public class BuildingBase : MonoBehaviour {
 	public BloodConsumper bloodConsumper;
 	public Health health;
@@ -9,6 +16,8 @@ public class BuildingBase : MonoBehaviour {
 	public Production production;
 	public Capacity capacity;
 
+	public BuildingType awaliableAfter = BuildingType.None;
+	public BuildingType buildingType = BuildingType.None;
 	public float BuildTime = 1.0f;
 
 	public GameObject buildingSpriteAvaliable;

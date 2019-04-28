@@ -8,4 +8,7 @@ public class EventManager {
 
 	public static event EventController.MethodContainer BloodLevelChangedEvent;
 	public void CallOnBloodLevelChangedEvent(EventData ob = null) => BloodLevelChangedEvent?.Invoke(ob);
+
+	public static event EventController.MethodContainer ChangeBuildingsListEvent;
+	public void CallOnChangeBuildingsListEvent(EventData ob = null) => ChangeBuildingsListEvent?.Invoke(ob);
 }
