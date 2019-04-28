@@ -10297,18 +10297,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1122145440 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1654267381079923988, guid: b6177481673c82f479283186e6fe1772,
-    type: 3}
-  m_PrefabInstance: {fileID: 1654267382123943400}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32c93e781b5ae594d9daadf760ba5de0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1144474866
 GameObject:
   m_ObjectHideFlags: 0
@@ -10935,6 +10923,12 @@ PrefabInstance:
       objectReference: {fileID: 4252029191415611879, guid: 355323429431fc2428c669467217827c,
         type: 3}
     - target: {fileID: 8858482191538963144, guid: ed33ea4a6384ff342a404d4fc8e076ec,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e6c28beff7259cd439afa82d7dafcfb3,
+        type: 3}
+    - target: {fileID: 3074039192787908697, guid: ed33ea4a6384ff342a404d4fc8e076ec,
         type: 3}
       propertyPath: m_Sprite
       value: 
@@ -18983,16 +18977,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 1654267381079923986, guid: b6177481673c82f479283186e6fe1772,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1122145440}
-    - target: {fileID: 1654267381079923986, guid: b6177481673c82f479283186e6fe1772,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnClick
-      objectReference: {fileID: 0}
     - target: {fileID: 1654267382208284101, guid: b6177481673c82f479283186e6fe1772,
         type: 3}
       propertyPath: m_havePropertiesChanged
@@ -19138,11 +19122,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1991343946, guid: ed33ea4a6384ff342a404d4fc8e076ec, type: 3}
       propertyPath: m_isInputParsingRequired
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8858482191538963144, guid: ed33ea4a6384ff342a404d4fc8e076ec,
-        type: 3}
-      propertyPath: m_FillAmount
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

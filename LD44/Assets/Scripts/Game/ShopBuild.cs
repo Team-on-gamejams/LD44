@@ -10,6 +10,7 @@ public class ShopBuild : MonoBehaviour {
 	public BuildForbidder buildForbidder;
 	internal BuildingBase buildingBase;
 	Image shopImage;
+	Image shopImageBack;
 	TextMeshProUGUI text;
 
 	bool isBuilding;
@@ -21,15 +22,16 @@ public class ShopBuild : MonoBehaviour {
 
 	void Start() {
 		shopImage = transform.Find("ShopImage").GetComponent<Image>();
+		shopImageBack = transform.Find("ShopImageBack").GetComponent<Image>();
 		text = transform.Find("Text").GetComponent<TextMeshProUGUI>();
 		buildingBase = buildPrefab.GetComponent<BuildingBase>();
+
+		shopImage.fillAmount = 0;
 		text.text += $" {buildingBase.price.meat}";
 		isBuilded = false;
 		isBuilding = false;
-		startingAlpha = shopImage.color.a;
+		startingAlpha = shopImageBack.color.a;
 
-		shopImage = transform.Find("ShopImage").GetComponent<Image>();
-		text = transform.Find("Text").GetComponent<TextMeshProUGUI>();
 		Hide();
 	}
 
@@ -56,7 +58,6 @@ public class ShopBuild : MonoBehaviour {
 			else if (!isBuilding) {
 				if (GameManager.Instance.Player.CanTakeResource(buildingBase.price)) {
 					GameManager.Instance.Player.TakeResource(buildingBase.price);
-					SetAlpha(shopImage, 1f);
 					isBuilding = true;
 					currBuildTime = 0;
 					shopImage.fillAmount = 0;
@@ -66,7 +67,7 @@ public class ShopBuild : MonoBehaviour {
 	}
 
 	public void EnableBuildMode(){
-		SetAlpha(shopImage, startingAlpha);
+		shopImage.fillAmount = 0;
 		GameManager.Instance.Player.cursorMode = CursorMode.Build;
 		GameManager.Instance.Player.currentBuildPref = this;
 
@@ -77,7 +78,7 @@ public class ShopBuild : MonoBehaviour {
 
 	public void DisableBuildMode() {
 		if(isBuilded)
-			SetAlpha(shopImage, 1.0f);
+			shopImage.fillAmount = 1;
 		GameManager.Instance.Player.cursorMode = CursorMode.Normal;
 		GameManager.Instance.Player.currentBuildPref = null;
 		spawnedGameObject = null;
@@ -111,13 +112,15 @@ public class ShopBuild : MonoBehaviour {
 	}
 
 	void Show() {
-		SetAlpha(shopImage, startingAlpha);
+		SetAlpha(shopImage, 1.0f);
+		SetAlpha(shopImageBack, startingAlpha);
 		SetAlpha(text, 1.0f);
 		isShowed = true;
 	}
 
 	void Hide() {
 		SetAlpha(shopImage, 0.0f);
+		SetAlpha(shopImageBack, 0.0f);
 		SetAlpha(text, 0.0f);
 		isShowed = false;
 	}

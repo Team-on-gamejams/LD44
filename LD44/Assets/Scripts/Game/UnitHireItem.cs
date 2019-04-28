@@ -8,6 +8,7 @@ public class UnitHireItem : MonoBehaviour {
 	public GameObject buildPrefab;
 	internal UnitBase unitBase;
 	Image shopImage;
+	Image shopImageBack;
 	TextMeshProUGUI text;
 	TextMeshProUGUI hireCountText;
 
@@ -19,16 +20,17 @@ public class UnitHireItem : MonoBehaviour {
 
 	void Start() {
 		shopImage = transform.Find("ShopImage").GetComponent<Image>();
+		shopImageBack = transform.Find("ShopImageBack").GetComponent<Image>();
 		text = transform.Find("Text").GetComponent<TextMeshProUGUI>();
 		hireCountText = transform.Find("HireCount").GetComponent<TextMeshProUGUI>();
 		unitBase = buildPrefab.GetComponent<UnitBase>();
+
+		shopImage.fillAmount = 0;
 		text.text += $" {unitBase.price.meat}";
-		startingAlpha = shopImage.color.a;
+		startingAlpha = shopImageBack.color.a;
 		hireCount = 0;
 		hireCountText.text = hireCount.ToString();
 
-		shopImage = transform.Find("ShopImage").GetComponent<Image>();
-		text = transform.Find("Text").GetComponent<TextMeshProUGUI>();
 		Hide();
 	}
 
@@ -38,7 +40,7 @@ public class UnitHireItem : MonoBehaviour {
 			shopImage.fillAmount = currBuildTime / unitBase.buildTime;
 			if (currBuildTime >= unitBase.buildTime) {
 				currBuildTime = 0;
-				shopImage.fillAmount = 1;
+				shopImage.fillAmount = 0;
 
 				foreach (var barak in GameManager.Instance.Player.Baraks) {
 					if(hireCount != 0){
@@ -47,13 +49,6 @@ public class UnitHireItem : MonoBehaviour {
 					}
 				}
 				hireCountText.text = hireCount.ToString();
-
-				if (hireCount != 0){
-					shopImage.fillAmount = 0;
-				}
-				else{
-					SetAlpha(shopImage, startingAlpha);
-				}
 			}
 		}
 	}
@@ -68,7 +63,6 @@ public class UnitHireItem : MonoBehaviour {
 				GameManager.Instance.Player.TakeResource(unitBase.price);
 				++hireCount;
 				hireCountText.text = hireCount.ToString();
-				SetAlpha(shopImage, 1f);
 			}
 		}
 	}
@@ -95,7 +89,8 @@ public class UnitHireItem : MonoBehaviour {
 	}
 
 	void Show() {
-		SetAlpha(shopImage, startingAlpha);
+		SetAlpha(shopImage, 1.0f);
+		SetAlpha(shopImageBack, startingAlpha);
 		SetAlpha(text, 1.0f);
 		SetAlpha(hireCountText, 1.0f);
 		isShowed = true;
@@ -103,6 +98,7 @@ public class UnitHireItem : MonoBehaviour {
 
 	void Hide() {
 		SetAlpha(shopImage, 0.0f);
+		SetAlpha(shopImageBack, 0.0f);
 		SetAlpha(text, 0.0f);
 		SetAlpha(hireCountText, 0.0f);
 		isShowed = false;
