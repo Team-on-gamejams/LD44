@@ -37,19 +37,18 @@ public class UnitHireItem : MonoBehaviour {
 			currBuildTime += Time.deltaTime;
 			shopImage.fillAmount = currBuildTime / unitBase.buildTime;
 			if (currBuildTime >= unitBase.buildTime) {
+				currBuildTime = 0;
 				shopImage.fillAmount = 1;
 
 				foreach (var barak in GameManager.Instance.Player.Baraks) {
 					if(hireCount != 0){
 						--hireCount;
-						Instantiate(buildPrefab, barak.transform);
+						Instantiate(buildPrefab, barak.transform.position + new Vector3(0.3f, 0, 0), barak.transform.rotation, null);
 					}
 				}
 				hireCountText.text = hireCount.ToString();
 
 				if (hireCount != 0){
-					SetAlpha(shopImage, 1f);
-					currBuildTime = 0;
 					shopImage.fillAmount = 0;
 				}
 				else{
@@ -63,11 +62,13 @@ public class UnitHireItem : MonoBehaviour {
 		if (!isShowed)
 			return;
 
+		Debug.Log("CLick");
 		if (GameManager.Instance.Player.cursorMode == CursorMode.Normal) {
 			if (GameManager.Instance.Player.CanTakeResource(unitBase.price)) {
 				GameManager.Instance.Player.TakeResource(unitBase.price);
 				++hireCount;
 				hireCountText.text = hireCount.ToString();
+				SetAlpha(shopImage, 1f);
 			}
 		}
 	}

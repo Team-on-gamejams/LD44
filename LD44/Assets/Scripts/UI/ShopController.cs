@@ -15,7 +15,7 @@ public class ShopController : MonoBehaviour {
 		buildButton = transform.Find("ButtonBuild").gameObject.GetComponent<Button>();
 		hireButton = transform.Find("ButtonHire").gameObject.GetComponent<Button>();
 
-		ShowHireMenu();
+		ShowBuildMenu();
 	}
 
 	public void ShowBuildMenu(){
