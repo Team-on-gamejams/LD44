@@ -1,14 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class UnitBase : MeleeAttacker {
+public class EnemyBase : MeleeAttacker {
 	public BloodConsumper bloodConsumper;
 	public Health health;
 	public Price price;
-
-	SpriteRenderer selection;
 
 	Pathfinder pathfinder;
 	int pathPos;
@@ -23,11 +20,9 @@ public class UnitBase : MeleeAttacker {
 	void Start() {
 		isMoving = false;
 		isReachDestination = false;
-		selection = transform.Find("Selection").gameObject.GetComponent<SpriteRenderer>();
 
 		LeanTween.delayedCall(1, () => {
 			pathfinder = new Pathfinder(GameManager.Instance.Player.aINavMeshGenerator);
-			GameManager.Instance.Player.AddUnit(this);
 		});
 	}
 
@@ -38,14 +33,6 @@ public class UnitBase : MeleeAttacker {
 				isMoving = false;
 			}
 		}
-	}
-
-	public void Select() {
-		SetAlpha(selection, 1.0f);
-	}
-
-	public void UnSelect() {
-		SetAlpha(selection, 0.0f);
 	}
 
 	public void MoveTo(Vector2 pos) {
