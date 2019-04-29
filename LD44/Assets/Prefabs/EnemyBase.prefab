@@ -47,6 +47,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4116184217895644d9975dcaf53153b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackType: 0
+  maxXp: 0
+  dmg: 0
+  cooldown: 0
   bloodConsumper:
     bloodConsumpertion: 0
   health:
