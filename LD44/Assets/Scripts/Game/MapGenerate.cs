@@ -11,17 +11,17 @@ public class MapGenerate : MonoBehaviour
     {
         
         var obj = ObjectForSpawn.GetComponent<SpriteRenderer>();
-        for (float i = 0; i < (MatrixCount * obj.size.x); i+= obj.size.x)
-        {
-            for (float j = 0; j < (MatrixCount * obj.size.y); j+= obj.size.x)
+        for (float i = 0; i < (MatrixCount * obj.size.x * 2); i+= obj.size.x * 2)
+        {   
+            for (float j = 0; j < (MatrixCount * obj.size.y * 2); j+= obj.size.y * 2)
             {
-                Instantiate(gameObject, new Vector3(i, j, 0), new Quaternion());
+                Instantiate(ObjectForSpawn, new Vector3(i + (obj.size.x / 2), j + (obj.size.y), 0), new Quaternion());
             }
         }
     }
 
     void Update()
     {
-
+   
     }
 }
