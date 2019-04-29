@@ -36,11 +36,10 @@ public class Attacker : MonoBehaviour {
 		enemy.health.TakeDmg(dmg);
 		if(enemy.health.IsDead()){
 			if (enemyTag == "Unit") {
-				GameManager.Instance.Player.RemoveUnit(enemy.GetComponent<UnitBase>());
-				Destroy(enemy.gameObject);
+				enemy.GetComponent<UnitBase>().Die();
 			}
 			else if (enemyTag == "Enemy") {
-				Destroy(enemy.gameObject);
+				enemy.GetComponent<EnemyBase>().Die();
 			}
 			return true;
 		}

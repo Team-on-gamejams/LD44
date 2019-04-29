@@ -17,10 +17,8 @@ public class EnemyBase : MonoBehaviour {
 		});
 	}
 
-	void OnCollisionEnter2D(Collision2D collision) {
-		if (collision.gameObject.tag == "Unit") {
-			UnitBase unit = collision.gameObject.GetComponent<UnitBase>();
-		}
+	public void Die() {
+		Destroy(gameObject);
 	}
 
 	public void MoveTo(Vector2 pos) {
