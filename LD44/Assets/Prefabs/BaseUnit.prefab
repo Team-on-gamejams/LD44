@@ -280,11 +280,12 @@ MonoBehaviour:
     bloodConsumpertion: 3
   health:
     maxHealth: 100
+    currHealth: 0
   price:
     blood: 0
     meat: 10
   speed: 5
-  awaliableAfter: 3
+  awaliableAfter: 4
   buildTime: 1
 --- !u!70 &58628753611483992
 CapsuleCollider2D:

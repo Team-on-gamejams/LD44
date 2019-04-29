@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour {
 
 	[SerializeField] List<BuildingType> buildingTypes;
 	[SerializeField] List<BuildingBase> buildings;
+	public List<BuildingBase> Buildings => buildings;
 	[SerializeField] List<BuildingBase> baraks;
 	public List<BuildingBase> Baraks => baraks;
 

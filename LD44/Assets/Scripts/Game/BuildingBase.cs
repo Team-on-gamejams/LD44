@@ -9,6 +9,7 @@ public enum BuildingType {
 	Chopper,
 	Baraks,
 	Brain,
+	Wall,
 }
 
 public class BuildingBase : MonoBehaviour {

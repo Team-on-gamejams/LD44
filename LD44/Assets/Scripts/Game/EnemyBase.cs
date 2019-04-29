@@ -14,8 +14,9 @@ public class EnemyBase : MonoBehaviour {
 	void Start() {
 		health.Init();
 		
-		LeanTween.delayedCall(1, () => {
+		LeanTween.delayedCall(1.5f, () => {
 			pathfinder = new Pathfinder(GameManager.Instance.Player.aINavMeshGenerator);
+			MoveTo(GameManager.Instance.Player.Buildings[0].transform.position);
 		});
 	}
 
@@ -57,15 +58,11 @@ public class EnemyBase : MonoBehaviour {
 			return;
 		}
 
-		Vector3 targetDir = path[pathPos] - (Vector2)transform.position;
-		float angle = Mathf.Atan2(targetDir.y, targetDir.x) * Mathf.Rad2Deg;
-		var initRot = transform.rotation;
-		var endRot = Quaternion.AngleAxis(angle, Vector3.forward);
+		if ((((Vector2)(transform.position)) - path[pathPos]).x <= 0)
+			transform.rotation = Quaternion.Euler(0, 0, 0);
+		else
+			transform.rotation = Quaternion.Euler(0, 180, 0);
 
-		LeanTween.value(gameObject, 0, 1, 0.1f)
-		.setOnUpdate((float val) => {
-			transform.rotation = Quaternion.Lerp(initRot, endRot, val);
-		});
 
 		transform.LeanMove(path[pathPos], (((Vector2)(transform.position)) - path[pathPos]).magnitude / speed)
 		.setOnComplete(() => {
