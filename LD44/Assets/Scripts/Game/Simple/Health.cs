@@ -5,26 +5,26 @@ using UnityEngine;
 [System.Serializable]
 public class Health {
 	public float maxHealth;
-	float points;
+	[SerializeField] float currHealth;
 
-	public Health() {
-		points = maxHealth;
+	public void Init(){
+		currHealth = maxHealth;
 	}
 
 	public void Set(float val) {
-		points = val;
-		if(points > maxHealth)
-			points = maxHealth;
+		currHealth = val;
+		if(currHealth > maxHealth)
+			currHealth = maxHealth;
 	}
-	public float Get() => points;
+	public float Get() => currHealth;
 
-	public bool IsDead() => points <= 0;
-	public bool IMaxHP() => points == maxHealth;
+	public bool IsDead() => currHealth <= 0;
+	public bool IMaxHP() => currHealth == maxHealth;
 
-	public void TakeDmg(float dmg) => points -= dmg;
+	public void TakeDmg(float dmg) => currHealth -= dmg;
 	public void Heal(float val) {
-		points += val;
-		if (points > maxHealth)
-			points = maxHealth;
+		currHealth += val;
+		if (currHealth > maxHealth)
+			currHealth = maxHealth;
 	}
 }

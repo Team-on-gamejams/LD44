@@ -25,6 +25,8 @@ public class UnitBase : MonoBehaviour {
 		isReachDestination = false;
 		selection = transform.Find("Selection").gameObject.GetComponent<SpriteRenderer>();
 
+		health.Init();
+
 		LeanTween.delayedCall(1, () => {
 			pathfinder = new Pathfinder(GameManager.Instance.Player.aINavMeshGenerator);
 			GameManager.Instance.Player.AddUnit(this);

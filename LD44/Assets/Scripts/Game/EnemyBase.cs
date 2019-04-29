@@ -12,6 +12,8 @@ public class EnemyBase : MonoBehaviour {
 	bool isMoving;
 
 	void Start() {
+		health.Init();
+		
 		LeanTween.delayedCall(1, () => {
 			pathfinder = new Pathfinder(GameManager.Instance.Player.aINavMeshGenerator);
 		});

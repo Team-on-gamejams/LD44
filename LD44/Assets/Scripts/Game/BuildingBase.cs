@@ -26,6 +26,8 @@ public class BuildingBase : MonoBehaviour {
 	void Start() {
 		buildingSpriteAvaliable = transform.Find("BuildingSpriteAvaliable").gameObject;
 		buildingSpriteUnAvaliable = transform.Find("BuildingSpriteUnAvaliable").gameObject;
+
+		health.Init();
 	}
 
 	void Update() {
