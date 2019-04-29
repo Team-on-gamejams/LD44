@@ -22,18 +22,18 @@ public class EnemySpawner : MonoBehaviour {
 		while(currTime >= spawnTime){
 			currTime -= spawnTime;
 			if(Random.Range(0, 2) == 1){
-				Instantiate(
-					enemies[Random.Range(0, enemies.Count)],
-					new Vector3(Random.Range(0, 2) == 1 ? minX : maxX, Random.Range(minY, maxY), 0),
-					new Quaternion()
-				);
+				//Instantiate(
+				//	enemies[Random.Range(0, enemies.Count)],
+				//	new Vector3(Random.Range(0, 2) == 1 ? minX : maxX, Random.Range(minY, maxY), 0),
+				//	new Quaternion()
+				//);
 			}
 			else{
-				Instantiate(
-					enemies[Random.Range(0, enemies.Count)],
-					new Vector3(Random.Range(minX, maxX), Random.Range(0, 2) == 1 ? minY : maxY, 0),
-					new Quaternion()
-				);
+				//Instantiate(
+				//	enemies[Random.Range(0, enemies.Count)],
+				//	new Vector3(Random.Range(minX, maxX), Random.Range(0, 2) == 1 ? minY : maxY, 0),
+				//	new Quaternion()
+				//);
 			}
 		}
 	}

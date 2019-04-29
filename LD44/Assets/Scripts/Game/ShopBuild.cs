@@ -35,6 +35,10 @@ public class ShopBuild : MonoBehaviour {
 		Hide();
 	}
 
+	void OnMouseEnter() {
+		Debug.Log("Enter");
+	}
+
 	void Update() {
 		if(isBuilding){
 			currBuildTime += Time.deltaTime;
