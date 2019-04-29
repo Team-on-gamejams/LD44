@@ -7,7 +7,6 @@ public class MainHearth : BuildingBase {
 
 	void Start() {
 		sp = GetComponent<SpriteRenderer>();
-		sp.color = new Color(sp.color.r, sp.color.g, sp.color.b, 0);
 
 		Color color = sp.color;
 		color.a = 0;
