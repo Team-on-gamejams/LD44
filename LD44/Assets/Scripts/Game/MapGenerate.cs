@@ -4,24 +4,32 @@ using UnityEngine;
 
 public class MapGenerate : MonoBehaviour
 {
+    public GameObject DefaultObject;
     public GameObject ObjectForSpawn;
-    const int MatrixCount = 3;
+    const int MatrixCount = 2;
 
     void Start()
     {
-        
+
         var obj = ObjectForSpawn.GetComponent<SpriteRenderer>();
-        for (float i = 0; i < (MatrixCount * obj.size.x * 2); i+= obj.size.x * 2)
-        {   
-            for (float j = 0; j < (MatrixCount * obj.size.y * 2); j+= obj.size.y * 2)
+        for (float i = 0; i <= (MatrixCount * obj.bounds.size.x); i += obj.bounds.size.x)
+        {
+            for (float j = 0; j <= (MatrixCount * obj.bounds.size.y); j += obj.bounds.size.y)
             {
-                Instantiate(ObjectForSpawn, new Vector3(i + (obj.size.x / 2), j + (obj.size.y), 0), new Quaternion());
+                if (i == obj.bounds.size.x && j == obj.bounds.size.y)
+                {
+                    Instantiate(DefaultObject, new Vector3(i, j, 0), new Quaternion());
+                }
+                else
+                {
+                    Instantiate(ObjectForSpawn, new Vector3(i, j, 0), new Quaternion());
+                }
             }
         }
     }
 
     void Update()
     {
-   
+
     }
 }
