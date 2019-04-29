@@ -6,7 +6,9 @@ public enum BuildingType {
 	None,
 	MainHearth,
 	AdditionalHearth,
+	Chopper,
 	Baraks,
+	Brain,
 }
 
 public class BuildingBase : MonoBehaviour {

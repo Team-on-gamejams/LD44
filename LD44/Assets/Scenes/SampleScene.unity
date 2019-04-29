@@ -10921,11 +10921,31 @@ PrefabInstance:
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1991343946, guid: ed33ea4a6384ff342a404d4fc8e076ec, type: 3}
+      propertyPath: m_text
+      value: Def
+      objectReference: {fileID: 0}
+    - target: {fileID: 1991343946, guid: ed33ea4a6384ff342a404d4fc8e076ec, type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8858482191689197746, guid: ed33ea4a6384ff342a404d4fc8e076ec,
         type: 3}
       propertyPath: buildPrefab
       value: 
-      objectReference: {fileID: 4252029191415611879, guid: d2e3e85c8458f2f41a0617e85b5c949f,
+      objectReference: {fileID: 4252029191415611879, guid: 014eaac1a5502b6479d7c0bd430f45fb,
+        type: 3}
+    - target: {fileID: 8858482191538963144, guid: ed33ea4a6384ff342a404d4fc8e076ec,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b2a59a195e384434790b8d9b8f0acb52,
+        type: 3}
+    - target: {fileID: 3074039192787908697, guid: ed33ea4a6384ff342a404d4fc8e076ec,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b2a59a195e384434790b8d9b8f0acb52,
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed33ea4a6384ff342a404d4fc8e076ec, type: 3}

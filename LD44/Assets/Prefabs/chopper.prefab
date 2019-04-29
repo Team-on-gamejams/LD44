@@ -151,6 +151,7 @@ MonoBehaviour:
     bloodConsumpertion: 0
   health:
     maxHealth: 100
+    currHealth: 0
   price:
     blood: 0
     meat: 100
@@ -162,7 +163,7 @@ MonoBehaviour:
     blood: 0
     meat: 100
   awaliableAfter: 1
-  buildingType: 2
+  buildingType: 3
   BuildTime: 1
   buildingSpriteAvaliable: {fileID: 0}
   buildingSpriteUnAvaliable: {fileID: 0}
