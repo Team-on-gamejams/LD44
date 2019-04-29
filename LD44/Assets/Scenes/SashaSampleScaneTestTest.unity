@@ -474,8 +474,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bc0ad6cc26282c4ab45385973d3118c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DefaultObject: {fileID: 0}
-  ObjectForSpawn: {fileID: 8010966874040997897, guid: 54a73be6b094003438fd7bd5df6f993c,
+  MainObject: {fileID: 8010966874040997897, guid: edbc67ab29f09dc42a6dc7365f7f0207,
+    type: 3}
+  ObjectForSpawn: {fileID: 8010966874040997897, guid: 5eb6ff9cb8c8bc841a2e5230af99478a,
     type: 3}
 --- !u!4 &1281125903
 Transform:
