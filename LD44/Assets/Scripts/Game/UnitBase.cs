@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UnitBase : MonoBehaviour {
+public class UnitBase : BattleUnit {
 	public BloodConsumper bloodConsumper;
 	public Health health;
 	public Price price;
@@ -42,7 +42,7 @@ public class UnitBase : MonoBehaviour {
 		}
 	}
 
-	public void Die(){
+	public override void Die(){
 		GameManager.Instance.Player.RemoveUnit(this);
 		Destroy(gameObject);
 	}
@@ -55,7 +55,7 @@ public class UnitBase : MonoBehaviour {
 		SetAlpha(selection, 0.0f);
 	}
 
-	public void MoveTo(Vector2 pos) {
+	public override void MoveTo(Vector2 pos) {
 		MoveTo(pos, true);
 	}
 

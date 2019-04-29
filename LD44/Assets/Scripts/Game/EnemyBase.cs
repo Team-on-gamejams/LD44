@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyBase : MonoBehaviour {
+public class EnemyBase : BattleUnit {
 	public Health health;
 
 	Pathfinder pathfinder;
@@ -11,20 +11,27 @@ public class EnemyBase : MonoBehaviour {
 	public float speed = 5;
 	bool isMoving;
 
+	int buildId;
+
 	void Start() {
 		health.Init();
 		
 		LeanTween.delayedCall(1.5f, () => {
 			pathfinder = new Pathfinder(GameManager.Instance.Player.aINavMeshGenerator);
-			MoveTo(GameManager.Instance.Player.Buildings[0].transform.position);
+			//TryMoveToHearth();
 		});
 	}
 
-	public void Die() {
+	public override void Die() {
 		Destroy(gameObject);
 	}
 
-	public void MoveTo(Vector2 pos) {
+	public void TryMoveToHearth(){
+		buildId = 0;
+		MoveTo(GameManager.Instance.Player.Buildings[buildId].transform.position);
+	}
+
+	public override void MoveTo(Vector2 pos) {
 		MoveTo(pos, true);
 	}
 
@@ -75,5 +82,18 @@ public class EnemyBase : MonoBehaviour {
 		Color color = image.color;
 		color.a = a;
 		image.color = color;
+	}
+
+	void Awake() {
+		EventManager.AddOrRemoveBuildingsEvent += AddOrRemoveBuildingsEvent;
+	}
+
+	void OnDestroy() {
+		EventManager.AddOrRemoveBuildingsEvent -= AddOrRemoveBuildingsEvent;
+	}
+
+	void AddOrRemoveBuildingsEvent(EventData ed) {
+		if(pathfinder != null)
+			TryMoveToHearth();
 	}
 }

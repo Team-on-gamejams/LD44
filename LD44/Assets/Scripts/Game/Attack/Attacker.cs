@@ -9,6 +9,7 @@ public class Attacker : MonoBehaviour {
 	MeleeZone meleeZone;
 	public GameObject range;
 	public GameObject autoAttackRange;
+	AutoAttackZone autoAttackZone;
 	bool canMove;
 
 	Health health;
@@ -30,6 +31,14 @@ public class Attacker : MonoBehaviour {
 			meleeZone.enemyTag = enemyTag;
 			meleeZone.currAttacker = this;
 		}
+
+		autoAttackZone = autoAttackRange.GetComponent<AutoAttackZone>();
+		autoAttackZone.enemyTag = enemyTag;
+		autoAttackZone.meleeZone = meleeZone;
+		if (enemyTag == "Unit") 
+			autoAttackZone.unit = GetComponent<EnemyBase>();
+		else if (enemyTag == "Enemy") 
+			autoAttackZone.unit = GetComponent<UnitBase>();
 	}
 
 	public bool Attack(Attacker enemy, float dmg){

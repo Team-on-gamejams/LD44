@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 4baac589df18e8245b054378186d4e3f
+  - enabled: 0
+    path: Assets/Scenes/SashaSampleScaneTestTest.unity
+    guid: 9144d2101835fef49924adb3f4ae9185
   m_configObjects: {}
