@@ -22,11 +22,13 @@ public class BuildForbidder : MonoBehaviour {
 	}
 
 	void OnTriggerStay2D(Collider2D collision) {
-		Disallow();
+		if(!collision.isTrigger)
+			Disallow();
 	}
 
 	void OnTriggerExit2D(Collider2D other) {
-		Allow();
+		if(!other.isTrigger)
+			Allow();
 	}
 
 	void Allow(){

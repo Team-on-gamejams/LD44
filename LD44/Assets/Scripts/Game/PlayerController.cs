@@ -98,6 +98,14 @@ public class PlayerController : MonoBehaviour {
 		selectedUnits.Add(unit);
 	}
 
+	public void RemoveUnit(UnitBase unit) {
+		units.Remove(unit);
+		if (selectedUnits.Contains(unit))
+			selectedUnits.Remove(unit);
+		bloodTake -= unit.bloodConsumper.bloodConsumpertion;
+		GameManager.Instance.EventManager.CallOnBloodLevelChangedEvent();
+	}
+
 	public void CleatSelectedUnits(){
 		foreach (var unit in selectedUnits) 
 			unit.UnSelect();

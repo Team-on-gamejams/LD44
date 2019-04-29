@@ -2,25 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyBase : MeleeAttacker {
-	public BloodConsumper bloodConsumper;
+public class EnemyBase : MonoBehaviour {
 	public Health health;
-	public Price price;
 
 	Pathfinder pathfinder;
 	int pathPos;
 	Vector2[] path;
 	public float speed = 5;
-	internal bool isMoving;
-	internal bool isReachDestination;
-
-	public BuildingType awaliableAfter = BuildingType.None;
-	public float buildTime = 1.0f;
+	bool isMoving;
 
 	void Start() {
-		isMoving = false;
-		isReachDestination = false;
-
 		LeanTween.delayedCall(1, () => {
 			pathfinder = new Pathfinder(GameManager.Instance.Player.aINavMeshGenerator);
 		});
@@ -29,9 +20,6 @@ public class EnemyBase : MeleeAttacker {
 	void OnCollisionEnter2D(Collision2D collision) {
 		if (collision.gameObject.tag == "Unit") {
 			UnitBase unit = collision.gameObject.GetComponent<UnitBase>();
-			if (unit.isReachDestination) {
-				isMoving = false;
-			}
 		}
 	}
 
@@ -50,7 +38,6 @@ public class EnemyBase : MeleeAttacker {
 		path = pathfinder.FindPath(transform.position, pos);
 		if (path != null) {
 			isMoving = true;
-			isReachDestination = false;
 			pathPos = 0;
 			Move();
 		}
@@ -67,7 +54,6 @@ public class EnemyBase : MeleeAttacker {
 	void Move() {
 		if (path == null || pathPos == path.Length || !isMoving) {
 			isMoving = false;
-			isReachDestination = true;
 			return;
 		}
 
@@ -86,12 +72,6 @@ public class EnemyBase : MeleeAttacker {
 			++pathPos;
 			Move();
 		});
-	}
-
-	public void RecalcMoveIfStop() {
-		if (!isMoving) {
-			isReachDestination = false;
-		}
 	}
 
 	void SetAlpha(SpriteRenderer image, float a) {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UnitBase : MeleeAttacker {
+public class UnitBase : MonoBehaviour {
 	public BloodConsumper bloodConsumper;
 	public Health health;
 	public Price price;
