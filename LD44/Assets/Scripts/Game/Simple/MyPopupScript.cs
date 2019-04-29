@@ -1,23 +1,26 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
 public class MyPopupScript : MonoBehaviour
 {
-    private bool MouseOver = false;
-    public Object ObjectToView; 
-
-    public void IsMouseOverUI()
+    public Object SenderObject;
+    public Object ViewObject;
+    public void PopUp()
     {
-        MouseOver = true;
-        Instantiate(ObjectToView);  
-    }
-        
-    public void OnMoseExit()
-    {
-
+        Debug.Log("+ View");
+        var @object = Instantiate(ViewObject, Input.mousePosition, new Quaternion());
+        LeanTween.delayedCall(1, () =>
+        {
+            DestroyView(@object);
+        });
     }
 
+    private void DestroyView(Object @object)
+    {
+        Destroy(@object);
+    }
 }
-    
