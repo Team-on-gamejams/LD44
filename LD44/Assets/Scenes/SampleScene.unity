@@ -2320,8 +2320,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 64
-    height: 64
+    width: 42
+    height: 42
 --- !u!1001 &481937111
 PrefabInstance:
   m_ObjectHideFlags: 0
