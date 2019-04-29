@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour {
 	[SerializeField] List<UnitBase> units;
 	public List<UnitBase> Units => units;
 	[SerializeField] List<UnitBase> selectedUnits;
+	public List<UnitBase> SelectedUnits => selectedUnits;
 
 	[SerializeField] GameRes currRes;
 	public GameRes CurrRes => currRes;

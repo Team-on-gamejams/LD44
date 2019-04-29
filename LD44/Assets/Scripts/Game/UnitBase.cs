@@ -61,6 +61,7 @@ public class UnitBase : BattleUnit {
 	}
 
 	public override void MoveTo(Vector2 pos) {
+		isMovingByPlayer = true;
 		MoveTo(pos, true);
 	}
 
@@ -91,7 +92,7 @@ public class UnitBase : BattleUnit {
 
 	void Move() {
 		if (path == null || pathPos == path.Length || !isMoving) {
-			isMoving = false;
+			isMovingByPlayer = isMoving = false;
 			isReachDestination = true;
 			return;
 		}

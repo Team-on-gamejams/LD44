@@ -52,6 +52,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health:
     maxHealth: 100
+    currHealth: 0
+  pathPos: 0
+  path: []
   speed: 5
 --- !u!70 &58628753611483992
 CapsuleCollider2D:
@@ -77,7 +80,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1224078448456859095}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -265,6 +268,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cef9304bce45faa49ac9ae74897a318d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  triggerList: []
 --- !u!1 &5116273201663679480
 GameObject:
   m_ObjectHideFlags: 0
@@ -328,9 +332,6 @@ MonoBehaviour:
   use: 1
   dmg: 50
   cooldown: 1
-  triggerList: []
-  currAttacker: {fileID: 0}
-  currEnemy: {fileID: 0}
 --- !u!1 &5163425195153602059
 GameObject:
   m_ObjectHideFlags: 0

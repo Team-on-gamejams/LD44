@@ -57,7 +57,6 @@ public class UnitHireItem : MonoBehaviour {
 		if (!isShowed)
 			return;
 
-		Debug.Log("CLick");
 		if (GameManager.Instance.Player.cursorMode == CursorMode.Normal) {
 			if (GameManager.Instance.Player.CanTakeResource(unitBase.price)) {
 				GameManager.Instance.Player.TakeResource(unitBase.price);

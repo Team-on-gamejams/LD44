@@ -16,7 +16,10 @@ public class AutoAttackZone : MonoBehaviour {
 	void Update() {
 		if(!meleeZone.IsInBattle) {
 			if (triggerList.Count != 0) {
-				if(!unit.isMoving || unit is EnemyBase || (unit.transform.position - triggerList[0].transform.position).magnitude < meleeZone.GetComponent<CircleCollider2D>().radius )
+				if(
+					!unit.isMovingByPlayer &&
+					(!unit.isMoving || unit is EnemyBase || (unit.transform.position - triggerList[0].transform.position).magnitude < meleeZone.GetComponent<CircleCollider2D>().radius)
+				)
 					unit.MoveTo(triggerList[0].transform.position);
 			}
 			else if (unit is EnemyBase){
