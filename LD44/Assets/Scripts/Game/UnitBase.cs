@@ -26,10 +26,16 @@ public class UnitBase : BattleUnit {
 
 		health.Init();
 
-		LeanTween.delayedCall(1, () => {
+		if(GameManager.Instance.Player != null && GameManager.Instance.Player.Buildings.Count != 0) {
 			pathfinder = new Pathfinder(GameManager.Instance.Player.aINavMeshGenerator);
 			GameManager.Instance.Player.AddUnit(this);
-		});
+		}
+		else{
+			LeanTween.delayedCall(1, () => {
+				pathfinder = new Pathfinder(GameManager.Instance.Player.aINavMeshGenerator);
+				GameManager.Instance.Player.AddUnit(this);
+			});
+		}
 	}
 
 	void OnCollisionEnter2D(Collision2D collision) {
