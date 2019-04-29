@@ -119,6 +119,7 @@ public class PlayerController : MonoBehaviour {
 		bloodProd += building.production.blood;
 		bloodTake += building.bloodConsumper.bloodConsumpertion;
 		GameManager.Instance.EventManager.CallOnBloodLevelChangedEvent();
+		GameManager.Instance.EventManager.CallAddOrRemoveBuildingsEvent();
 		if (building.buildingType == BuildingType.Baraks)
 			baraks.Add(building);
 
@@ -139,6 +140,7 @@ public class PlayerController : MonoBehaviour {
 		bloodProd -= building.production.blood;
 		bloodTake -= building.bloodConsumper.bloodConsumpertion;
 		GameManager.Instance.EventManager.CallOnBloodLevelChangedEvent();
+		GameManager.Instance.EventManager.CallAddOrRemoveBuildingsEvent();
 
 		bool findAnother = false;
 		foreach (var i in buildings) {

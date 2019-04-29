@@ -10,9 +10,11 @@ public class MeleeZone : MonoBehaviour {
 
 	internal string enemyTag;
 
-	[SerializeField] List<Collider2D> triggerList;
-	[SerializeField] internal Attacker currAttacker;
-	[SerializeField] Attacker currEnemy;
+	List<Collider2D> triggerList;
+	internal Attacker currAttacker;
+	Attacker currEnemy;
+
+	public bool IsInBattle => currEnemy != null;
 
 	void Start() {
 		triggerList = new List<Collider2D>();

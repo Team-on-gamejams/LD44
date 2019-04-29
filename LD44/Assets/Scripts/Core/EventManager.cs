@@ -11,4 +11,7 @@ public class EventManager {
 
 	public static event EventController.MethodContainer ChangeBuildingsListEvent;
 	public void CallOnChangeBuildingsListEvent(EventData ob = null) => ChangeBuildingsListEvent?.Invoke(ob);
+
+	public static event EventController.MethodContainer AddOrRemoveBuildingsEvent;
+	public void CallAddOrRemoveBuildingsEvent(EventData ob = null) => AddOrRemoveBuildingsEvent?.Invoke(ob);
 }
