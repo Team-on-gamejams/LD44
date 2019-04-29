@@ -7,7 +7,7 @@ public class AutoAttackZone : MonoBehaviour {
 	internal BattleUnit unit;
 	internal MeleeZone meleeZone;
 
-	List<Collider2D> triggerList;
+	[SerializeField] List<Collider2D> triggerList;
 
 	void Start() {
 		triggerList = new List<Collider2D>();
@@ -15,10 +15,11 @@ public class AutoAttackZone : MonoBehaviour {
 
 	void Update() {
 		if(!meleeZone.IsInBattle) {
-			if(triggerList.Count != 0){
-				unit.MoveTo(triggerList[0].transform.position);
+			if (triggerList.Count != 0) {
+				if(!unit.isMoving || unit is EnemyBase)
+					unit.MoveTo(triggerList[0].transform.position);
 			}
-			else if(unit is EnemyBase){
+			else if (unit is EnemyBase){
 				((EnemyBase)(unit)).TryMoveToHearth();
 			}
 		}

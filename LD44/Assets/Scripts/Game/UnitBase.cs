@@ -14,7 +14,6 @@ public class UnitBase : BattleUnit {
 	int pathPos;
 	Vector2[] path;
 	public float speed = 5;
-	internal bool isMoving;
 	internal bool isReachDestination;
 
 	public BuildingType awaliableAfter = BuildingType.None;

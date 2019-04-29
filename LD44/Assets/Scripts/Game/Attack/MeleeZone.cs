@@ -26,9 +26,6 @@ public class MeleeZone : MonoBehaviour {
 			currAttackTime += Time.deltaTime;
 			if (currAttackTime >= cooldown) {
 				currAttackTime -= cooldown;
-				if(currAttacker == null || currEnemy == null){
-
-				}
 				currAttacker.Attack(currEnemy, dmg);
 			}
 		}

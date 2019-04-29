@@ -6,20 +6,14 @@ public class EnemyBase : BattleUnit {
 	public Health health;
 
 	Pathfinder pathfinder;
-	int pathPos;
-	Vector2[] path;
+	[SerializeField] int pathPos;
+	[SerializeField] Vector2[] path;
 	public float speed = 5;
-	bool isMoving;
-
-	int buildId;
 
 	void Start() {
 		health.Init();
 		
-		LeanTween.delayedCall(1.5f, () => {
-			pathfinder = new Pathfinder(GameManager.Instance.Player.aINavMeshGenerator);
-			//TryMoveToHearth();
-		});
+		pathfinder = new Pathfinder(GameManager.Instance.Player.aINavMeshGenerator);
 	}
 
 	public override void Die() {
@@ -27,8 +21,8 @@ public class EnemyBase : BattleUnit {
 	}
 
 	public void TryMoveToHearth(){
-		buildId = 0;
-		MoveTo(GameManager.Instance.Player.Buildings[buildId].transform.position);
+		if(!isMoving)
+			MoveTo(GameManager.Instance.Player.Buildings[0].transform.position);
 	}
 
 	public override void MoveTo(Vector2 pos) {

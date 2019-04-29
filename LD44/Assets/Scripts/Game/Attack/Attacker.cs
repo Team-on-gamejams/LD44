@@ -35,10 +35,7 @@ public class Attacker : MonoBehaviour {
 		autoAttackZone = autoAttackRange.GetComponent<AutoAttackZone>();
 		autoAttackZone.enemyTag = enemyTag;
 		autoAttackZone.meleeZone = meleeZone;
-		if (enemyTag == "Unit") 
-			autoAttackZone.unit = GetComponent<EnemyBase>();
-		else if (enemyTag == "Enemy") 
-			autoAttackZone.unit = GetComponent<UnitBase>();
+		autoAttackZone.unit = GetComponent<BattleUnit>();
 	}
 
 	public bool Attack(Attacker enemy, float dmg){
