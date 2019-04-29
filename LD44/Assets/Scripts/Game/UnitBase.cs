@@ -40,6 +40,11 @@ public class UnitBase : MonoBehaviour {
 		}
 	}
 
+	public void Die(){
+		GameManager.Instance.Player.RemoveUnit(this);
+		Destroy(gameObject);
+	}
+
 	public void Select() {
 		SetAlpha(selection, 1.0f);
 	}
