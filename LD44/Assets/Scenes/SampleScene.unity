@@ -9124,7 +9124,7 @@ PrefabInstance:
     - target: {fileID: 8858482191689197750, guid: ed33ea4a6384ff342a404d4fc8e076ec,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8858482191689197750, guid: ed33ea4a6384ff342a404d4fc8e076ec,
         type: 3}
@@ -9199,11 +9199,31 @@ PrefabInstance:
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1991343946, guid: ed33ea4a6384ff342a404d4fc8e076ec, type: 3}
+      propertyPath: m_text
+      value: Chopper
+      objectReference: {fileID: 0}
+    - target: {fileID: 1991343946, guid: ed33ea4a6384ff342a404d4fc8e076ec, type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8858482191689197746, guid: ed33ea4a6384ff342a404d4fc8e076ec,
         type: 3}
       propertyPath: buildPrefab
       value: 
-      objectReference: {fileID: 4252029191415611879, guid: d2e3e85c8458f2f41a0617e85b5c949f,
+      objectReference: {fileID: 4252029191415611879, guid: d06f5e71c6fba0d4786755005516216e,
+        type: 3}
+    - target: {fileID: 8858482191538963144, guid: ed33ea4a6384ff342a404d4fc8e076ec,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: cbbbff80c891a4a4a9aabc4abfea9ea4,
+        type: 3}
+    - target: {fileID: 3074039192787908697, guid: ed33ea4a6384ff342a404d4fc8e076ec,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: cbbbff80c891a4a4a9aabc4abfea9ea4,
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed33ea4a6384ff342a404d4fc8e076ec, type: 3}
@@ -11022,7 +11042,7 @@ PrefabInstance:
     - target: {fileID: 8858482191689197750, guid: ed33ea4a6384ff342a404d4fc8e076ec,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8858482191689197750, guid: ed33ea4a6384ff342a404d4fc8e076ec,
         type: 3}
@@ -15132,8 +15152,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1155771689}
-  - {fileID: 1175355745}
   - {fileID: 918230068}
+  - {fileID: 1175355745}
   - {fileID: 1146682608}
   - {fileID: 1042345664}
   - {fileID: 874162489}
