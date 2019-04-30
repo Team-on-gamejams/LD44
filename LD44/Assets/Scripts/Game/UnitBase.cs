@@ -19,6 +19,8 @@ public class UnitBase : BattleUnit {
 	public BuildingType awaliableAfter = BuildingType.None;
 	public float buildTime = 1.0f;
 
+	LTDescr moveDesc = null, rotateDesc = null, repeatDesc = null;
+
 	void Start() {
 		isMoving = false;
 		isReachDestination = false;
@@ -67,8 +69,21 @@ public class UnitBase : BattleUnit {
 
 	int tryToMoveCnt = 0;
 	void MoveTo(Vector2 pos, bool callByUser) {
-		if (isMoving)
-			LeanTween.cancel(gameObject, false);
+		if (isMoving) {
+			if(moveDesc != null){
+				LeanTween.cancel(moveDesc.id);
+				moveDesc = null;
+			}
+			if (rotateDesc != null) {
+				LeanTween.cancel(rotateDesc.id);
+				rotateDesc = null;
+			}
+			if (repeatDesc != null) {
+				LeanTween.cancel(repeatDesc.id);
+				repeatDesc = null;
+			}
+			isMoving = false;
+		}
 
 		if (callByUser)
 			tryToMoveCnt = 0;
@@ -83,7 +98,7 @@ public class UnitBase : BattleUnit {
 		else {
 			++tryToMoveCnt;
 			if (tryToMoveCnt != 10) {
-				LeanTween.delayedCall(gameObject, 0.5f, () => {
+				repeatDesc = LeanTween.delayedCall(gameObject, 0.3f, () => {
 					MoveTo(pos, false);
 				});
 			}
@@ -102,12 +117,12 @@ public class UnitBase : BattleUnit {
 		var initRot = transform.rotation;
 		var endRot = Quaternion.AngleAxis(angle, Vector3.forward);
 
-		LeanTween.value(gameObject, 0, 1, 0.1f)
+		rotateDesc = LeanTween.value(gameObject, 0, 1, 0.1f)
 		.setOnUpdate((float val) => {
 			transform.rotation = Quaternion.Lerp(initRot, endRot, val);
 		});
 
-		transform.LeanMove(path[pathPos], (((Vector2)(transform.position)) - path[pathPos]).magnitude / speed)
+		moveDesc = transform.LeanMove(path[pathPos], (((Vector2)(transform.position)) - path[pathPos]).magnitude / speed)
 		.setOnComplete(() => {
 			++pathPos;
 			Move();

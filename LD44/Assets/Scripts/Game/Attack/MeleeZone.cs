@@ -13,8 +13,9 @@ public class MeleeZone : MonoBehaviour {
 	List<Collider2D> triggerList;
 	internal Attacker currAttacker;
 	Attacker currEnemy;
+	internal AutoAttackZone autoAttackZone;
 
-	public bool IsInBattle => currEnemy != null;
+	public bool IsInBattle => currEnemy != null && !autoAttackZone.unit.isMoving;
 
 	void Start() {
 		triggerList = new List<Collider2D>();
@@ -22,7 +23,7 @@ public class MeleeZone : MonoBehaviour {
 	}
 
 	void Update() {
-		if(use && currEnemy != null){
+		if(use && currEnemy != null && !autoAttackZone.unit.isMoving){
 			currAttackTime += Time.deltaTime;
 			if (currAttackTime >= cooldown) {
 				currAttackTime -= cooldown;
@@ -44,8 +45,14 @@ public class MeleeZone : MonoBehaviour {
 	void OnTriggerExit2D(Collider2D collision) {
 		if (!collision.isTrigger && collision.tag == enemyTag && triggerList.Contains(collision)) {
 			triggerList.Remove(collision);
-			if (collision.GetComponent<Attacker>() == currEnemy)
-				currEnemy = triggerList.Count == 0 ? null : triggerList[0].GetComponent<Attacker>();
+			if (collision.GetComponent<Attacker>() == currEnemy){
+				if(triggerList.Count == 0){
+					currEnemy = null;
+				}
+				else {
+					currEnemy = triggerList[0].GetComponent<Attacker>();
+				}
+			}
 		}
 	}
 }
