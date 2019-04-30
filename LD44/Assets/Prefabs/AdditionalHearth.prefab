@@ -154,17 +154,17 @@ MonoBehaviour:
     currHealth: 0
   price:
     blood: 0
-    meat: 100
+    meat: 250
   production:
-    blood: 100
+    blood: 15
     meat: 0
     TimeForProd: 1
   capacity:
-    blood: 50
+    blood: 0
     meat: 0
   awaliableAfter: 1
   buildingType: 2
-  BuildTime: 1
+  BuildTime: 5
   buildingSpriteAvaliable: {fileID: 0}
   buildingSpriteUnAvaliable: {fileID: 0}
 --- !u!61 &4252029191415611874

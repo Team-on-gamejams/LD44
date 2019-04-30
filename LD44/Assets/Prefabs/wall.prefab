@@ -128,13 +128,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bloodConsumper:
-    bloodConsumpertion: 5
+    bloodConsumpertion: 1
   health:
     maxHealth: 250
     currHealth: 0
   price:
     blood: 0
-    meat: 0
+    meat: 15
   production:
     blood: 0
     meat: 0

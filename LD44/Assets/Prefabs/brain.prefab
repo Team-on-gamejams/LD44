@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bloodConsumper:
-    bloodConsumpertion: 30
+    bloodConsumpertion: 5
   health:
     maxHealth: 100
     currHealth: 0
@@ -164,7 +164,7 @@ MonoBehaviour:
     meat: 0
   awaliableAfter: 2
   buildingType: 5
-  BuildTime: 2
+  BuildTime: 10
   buildingSpriteAvaliable: {fileID: 0}
   buildingSpriteUnAvaliable: {fileID: 0}
 --- !u!50 &3775496258719772248
