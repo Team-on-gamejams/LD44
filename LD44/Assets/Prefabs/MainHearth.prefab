@@ -98,7 +98,8 @@ MonoBehaviour:
   bloodConsumper:
     bloodConsumpertion: 0
   health:
-    maxHealth: 100
+    maxHealth: 1000
+    currHealth: 0
   price:
     blood: 0
     meat: 0

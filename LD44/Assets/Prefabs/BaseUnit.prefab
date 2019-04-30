@@ -121,11 +121,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   use: 1
-  dmg: 25
+  dmg: 35
   cooldown: 1
-  triggerList: []
-  currAttacker: {fileID: 0}
-  currEnemy: {fileID: 0}
 --- !u!1 &1224078448319164010
 GameObject:
   m_ObjectHideFlags: 0
@@ -277,7 +274,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bloodConsumper:
-    bloodConsumpertion: 3
+    bloodConsumpertion: 1
   health:
     maxHealth: 100
     currHealth: 0
@@ -499,3 +496,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cef9304bce45faa49ac9ae74897a318d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  triggerList: []

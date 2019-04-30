@@ -6050,11 +6050,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1991343946, guid: ed33ea4a6384ff342a404d4fc8e076ec, type: 3}
       propertyPath: m_text
-      value: Chopper
+      value: Meat producer
       objectReference: {fileID: 0}
     - target: {fileID: 1991343946, guid: ed33ea4a6384ff342a404d4fc8e076ec, type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 7
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1991343946, guid: ed33ea4a6384ff342a404d4fc8e076ec, type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1991343946, guid: ed33ea4a6384ff342a404d4fc8e076ec, type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1991343946, guid: ed33ea4a6384ff342a404d4fc8e076ec, type: 3}
+      propertyPath: m_fontSize
+      value: 18.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1991343946, guid: ed33ea4a6384ff342a404d4fc8e076ec, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1991343946, guid: ed33ea4a6384ff342a404d4fc8e076ec, type: 3}
+      propertyPath: m_firstOverflowCharacterIndex
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1991343946, guid: ed33ea4a6384ff342a404d4fc8e076ec, type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1991343946, guid: ed33ea4a6384ff342a404d4fc8e076ec, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 18.3
       objectReference: {fileID: 0}
     - target: {fileID: 3074039192787908697, guid: ed33ea4a6384ff342a404d4fc8e076ec,
         type: 3}
@@ -6660,11 +6688,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1991343946, guid: ed33ea4a6384ff342a404d4fc8e076ec, type: 3}
       propertyPath: m_text
-      value: Def
+      value: Defence center
       objectReference: {fileID: 0}
     - target: {fileID: 1991343946, guid: ed33ea4a6384ff342a404d4fc8e076ec, type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 3
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1991343946, guid: ed33ea4a6384ff342a404d4fc8e076ec, type: 3}
+      propertyPath: m_fontSize
+      value: 17.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 1991343946, guid: ed33ea4a6384ff342a404d4fc8e076ec, type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1991343946, guid: ed33ea4a6384ff342a404d4fc8e076ec, type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1991343946, guid: ed33ea4a6384ff342a404d4fc8e076ec, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1991343946, guid: ed33ea4a6384ff342a404d4fc8e076ec, type: 3}
+      propertyPath: m_firstOverflowCharacterIndex
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1991343946, guid: ed33ea4a6384ff342a404d4fc8e076ec, type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1991343946, guid: ed33ea4a6384ff342a404d4fc8e076ec, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 17.85
       objectReference: {fileID: 0}
     - target: {fileID: 3074039192787908697, guid: ed33ea4a6384ff342a404d4fc8e076ec,
         type: 3}
@@ -7038,11 +7094,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1991343946, guid: ed33ea4a6384ff342a404d4fc8e076ec, type: 3}
       propertyPath: m_text
-      value: Baraks
+      value: Barracks
       objectReference: {fileID: 0}
     - target: {fileID: 1991343946, guid: ed33ea4a6384ff342a404d4fc8e076ec, type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 5
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3074039192787908697, guid: ed33ea4a6384ff342a404d4fc8e076ec,
         type: 3}
@@ -12282,6 +12338,42 @@ PrefabInstance:
     - target: {fileID: 1991343946, guid: ed33ea4a6384ff342a404d4fc8e076ec, type: 3}
       propertyPath: m_isInputParsingRequired
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1991343946, guid: ed33ea4a6384ff342a404d4fc8e076ec, type: 3}
+      propertyPath: m_text
+      value: Blood producer
+      objectReference: {fileID: 0}
+    - target: {fileID: 1991343946, guid: ed33ea4a6384ff342a404d4fc8e076ec, type: 3}
+      propertyPath: m_fontSize
+      value: 17.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1991343946, guid: ed33ea4a6384ff342a404d4fc8e076ec, type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1991343946, guid: ed33ea4a6384ff342a404d4fc8e076ec, type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1991343946, guid: ed33ea4a6384ff342a404d4fc8e076ec, type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1991343946, guid: ed33ea4a6384ff342a404d4fc8e076ec, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1991343946, guid: ed33ea4a6384ff342a404d4fc8e076ec, type: 3}
+      propertyPath: m_firstOverflowCharacterIndex
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1991343946, guid: ed33ea4a6384ff342a404d4fc8e076ec, type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1991343946, guid: ed33ea4a6384ff342a404d4fc8e076ec, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 17.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed33ea4a6384ff342a404d4fc8e076ec, type: 3}
