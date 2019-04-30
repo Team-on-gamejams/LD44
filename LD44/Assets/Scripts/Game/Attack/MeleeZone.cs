@@ -8,7 +8,7 @@ public class MeleeZone : MonoBehaviour {
 	public float cooldown;
 	float currAttackTime;
 
-	internal string enemyTags;
+	internal string enemyTag;
 
 	List<Collider2D> triggerList;
 	internal Attacker currAttacker;
