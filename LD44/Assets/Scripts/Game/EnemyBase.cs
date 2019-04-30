@@ -10,6 +10,8 @@ public class EnemyBase : BattleUnit {
 	[SerializeField] Vector2[] path;
 	public float speed = 5;
 
+	LTDescr moveDesc = null;
+
 	void Start() {
 		health.Init();
 		
@@ -29,27 +31,21 @@ public class EnemyBase : BattleUnit {
 		MoveTo(pos, true);
 	}
 
-	int tryToMoveCnt = 0;
 	void MoveTo(Vector2 pos, bool callByUser) {
-		if (isMoving)
-			LeanTween.cancel(gameObject, false);
+		if (isMoving) {
+			if (moveDesc != null) {
+				LeanTween.cancel(moveDesc.id);
+				moveDesc = null;
+			}
+			isMoving = false;
+		}
 
-		if (callByUser)
-			tryToMoveCnt = 0;
 
 		path = pathfinder.FindPath(transform.position, pos);
 		if (path != null) {
 			isMoving = true;
 			pathPos = 0;
 			Move();
-		}
-		else {
-			++tryToMoveCnt;
-			if (tryToMoveCnt != 10) {
-				LeanTween.delayedCall(gameObject, 0.5f, () => {
-					MoveTo(pos, false);
-				});
-			}
 		}
 	}
 
@@ -65,7 +61,7 @@ public class EnemyBase : BattleUnit {
 			transform.rotation = Quaternion.Euler(0, 180, 0);
 
 
-		transform.LeanMove(path[pathPos], (((Vector2)(transform.position)) - path[pathPos]).magnitude / speed)
+		moveDesc = transform.LeanMove(path[pathPos], (((Vector2)(transform.position)) - path[pathPos]).magnitude / speed)
 		.setOnComplete(() => {
 			++pathPos;
 			Move();
