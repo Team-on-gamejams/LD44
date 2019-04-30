@@ -26,6 +26,7 @@ public class MeleeZone : MonoBehaviour {
 		if(use && currEnemy != null && !autoAttackZone.unit.isMoving){
 			currAttackTime += Time.deltaTime;
 			if (currAttackTime >= cooldown) {
+				//autoAttackZone.unit.anim.SetTrigger("Attack");
 				currAttackTime -= cooldown;
 				currAttacker.Attack(currEnemy, dmg);
 			}

@@ -23,6 +23,8 @@ public class FlagController : MonoBehaviour {
 		flag.color = color;
 		flag.transform.localScale = new Vector3(1, 1, 1) / 2;
 
+		LeanTween.cancel(gameObject);
+
 		LeanTween.value(gameObject, 1, 0, 1f)
 		.setOnUpdate((float a) => {
 			color = flag.color;

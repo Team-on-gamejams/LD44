@@ -19,6 +19,7 @@ public class EnemyBase : BattleUnit {
 	}
 
 	public override void Die() {
+		//anim.SetTrigger("Die");
 		Destroy(gameObject);
 	}
 
