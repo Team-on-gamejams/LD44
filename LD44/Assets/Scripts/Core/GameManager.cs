@@ -16,12 +16,13 @@ public class GameManager : Singleton<GameManager> {
 	private bool isTimeStop;
 
 	public EventManager EventManager;
+	public PlayerController Player;
 
 	public void Start() {
 		EventManager = new EventManager();
 		Input.multiTouchEnabled = false;
 		LeanTween.init(800);
 
-		IsTimeStop = true;
+		IsTimeStop = false;
 	}
 }
