@@ -1,4 +1,6 @@
 # LD44(BloodVirus)
+![](readme/cover.png) 
+
 You are in the middle age virus created by evil magician. Protect your main heart and destroy naughty humans. Buy new buildings and hire units.
 
 * WASD keys to move camera
@@ -27,4 +29,6 @@ Credits:
 
 Sweet screenshot)
 
-![1.png](///raw/4fd/71/z/235dd.png)
+![](readme/1.png) 
+![](readme/2.png) 
+![](readme/3.png) 
