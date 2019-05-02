@@ -1,6 +1,8 @@
 # LD44(BloodVirus)
 ![](readme/cover.png) 
 
+Link to jam entry: https://ldjam.com/events/ludum-dare/44/bloodvirus
+
 You are in the middle age virus created by evil magician. Protect your main heart and destroy naughty humans. Buy new buildings and hire units.
 
 * WASD keys to move camera
